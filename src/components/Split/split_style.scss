@@ -1,151 +1,476 @@
-/** Variables **/
+* {box-sizing: border-box;}
 
-$container-BgColor: #444;
-$left-bgColor: rgb(230, 6, 19);
-$left-button-hover: rgba(94, 226, 247, 0.7);
-$right-bgColor: rgb(179, 178, 178);
-$right-button-hover: rgba(255, 140, 219, 0.7);
-$hover-width: 75%;
-$small-width: 25%;
-$animateSpeed: 1000ms;
-
-
-html, body {
-  padding:0;
-  margin:0;
-  font-family: 'Open Sans', sans-serif;
+/*header*/
+#header {
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  position: fixed;
+  border-bottom: 2px solid dimgray;
+  margin-right: 10px;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
 }
 
-h1 {
-  font-size: 5rem;
-  color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  font-family: 'Playfair Display', serif;
-}
-
-.button {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 2.6rem;
-  padding-top: 1.5rem;
-  width: 15rem;
-  text-align: center;
-  color: white;
-  border: 3px solid #fff;
-  border-radius: 4px;
-  font-weight: 600;
-  text-transform: uppercase;
+#header a {
+  color: #000;
   text-decoration: none;
-  transform: translateX(-50%);
-  transition: all .2s;
 }
 
-.screen.left .button:hover {
-  background-color: $left-button-hover;
-  border-color: $left-button-hover;
+#header a:hover {
+  color: darkred;
+  font-weight: bold;
 }
 
-.screen.right .button:hover {
-  background-color: $right-button-hover;
-  border-color: $right-button-hover;
-}
-
-.container {
+.nav1 {
   position: relative;
+  float: right;
+  padding: 15px;
+  padding-right: 45px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #000;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  color: darkred;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.nav2 {
+  padding-right: 40px;
+  padding-left: 20px;
+  width:100%;
+  float: left;
+}
+.nav2 a {
+  padding-right: 15px;
+  float:left;
+}
+.search {
+  padding: 6px;
+  text-align: right;
+  padding-right: 0px;
+}
+.search input {
+  background-color: lightgray;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-top: lightgray 3px solid;
+  border-left: lightgray 3px solid;
+}
+.search button {
+  background-color: dimgray;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+.search button:hover {
+  background-color: darkred;
+}
+.fa-search {
+  font-size: 18px;
+  color: #fff;
+}
+
+#basket {width:100%;}
+#myBasket {
+  float:right;
+  padding-right: 45px;
+  font-weight: bold;
+}
+
+.logo {
+  border-bottom: 2px solid dimgray;
+  padding: 5px;
+  width: 15%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  margin-top: 15px;
+}
+#big {
+  font-size: 50px;
+  color: darkred;
+}
+
+
+
+.content {
+  z-index:0;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*row1*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.column {
+  width: 33.33333333333333%;
+  max-width: 33.33333333333333%;
+  text-align: center;
+  padding: 10px;
+}
+img {
   width: 100%;
+}
+.column .buy {
+  position: relative;
+  top: 35%;
+  width: 100%;
+  height: 12%;
+  background-color: transparent;
+  border-top: #fff 4px solid;
+  border-bottom: #fff 4px solid;
+  color: #fff;
+  font-weight:bold;
+}
+.column .buy:hover {
+  background-color: rgba(51, 51, 51, 0.7);
+}
+.column .buy a {
+  color: #fff;
+  text-decoration:none;
+  font-size: 32px;
+}
+.column .men {
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 4px;
+  border: none;
+  position: relative;
+  top: 20%;
+  padding: 8px 35px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.column .men:hover {
+  background-color: rgb(51, 51, 51);
+}
+
+/*row2 - logo*/
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 2px solid dimgray;
+  border-bottom: 2px solid dimgray;
+}
+.column2 {
+  width: 19%;
+  max-width: 19%;
+  padding: 5px;
+}
+.column2 .bg {
   height: 100%;
-  background: $container-BgColor;
+  padding: 10px;
+}
+.column2:hover .bg {
+  background-color: #ddd;
+}
+.column2a {
+  width:5%;
+  max-width:5%;
+  padding: 5px;
+  position: relative;
+}
+.fa-angle-right {
+  color: dimgray;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+.fa-angle-right:hover {
+  color: darkred;
+}
 
-  .screen {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
+/*women fashion news*/
+#women {
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid dimgray;
+}
+.goBuy {
+  color: #fff;
+  background-color: #232323;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px;
+}
+.goBuy:hover {
+  color: darkred;
+  background-color: lightgray;
+}
+.womenImage {
+  margin: 10px;
+  float: right;
+  display: block;
+  width: 40%;
+}
+
+/*shop*/
+#womenShop {
+  border-bottom: 2px solid dimgray;
+  margin-top: 50px;
+}
+.row3 {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.column3 {
+  padding: 10px;
+  width: 25%;
+  max-width: 25%;
+}
+.zoom:hover .dress {
+  transform: scale(1.2);
+}
+.dress {
+  transition: transform 0.4s ease-in-out;
+  user-select: none;
+  padding: 15px;
+}
+.bg {
+  background-color: lightgray;
+  padding: 20px;
+}
+.zoom {
+  overflow: hidden;
+  border: 2px solid dimgray;
+  padding: 15px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.caption {
+  font-size: 12px;
+  padding:0;
+  margin: 0;
+  padding-top: 20px;
+}
+.caption .fa-shopping-cart:hover {
+  color:darkred;
+}
+
+h3 {
+  color: darkred;
+}
+
+
+/*newsletter*/
+#news {
+  margin-top: 50px;
+  width:100%;
+  height: 150px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: right;
+  color: darkred;
+  border-top: 3px darkred solid;
+  border-bottom: 3px darkred solid;
+  background-image: url("https://www.abc.net.au/cm/rimage/9997840-16x9-xlarge.jpg?v=5");
+}
+.newsL {
+  z-index:1;
+  padding-right: 60px;
+  padding-top: 10px;
+}
+.newsL input {
+  height: 40px;
+}
+#btn {
+  background-color: dimgray;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+#btn:hover {
+  background-color: lightgray;
+  color: #000;
+}
+
+/*footer*/
+footer {
+  font-size: 16px;
+  background-color: lightgray;
+  margin-top: 40px;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+}
+
+/*media*/
+@media only screen and (max-width:1000px) {
+  .logo {
+    margin-top: 0px;
+    width: 20%;
+  }
+  .column .men {
+    font-size: 20px;
   }
 }
 
-.screen.left {
-  left:0;
-  background: url('https://preview.ibb.co/cpabRm/pexels_photo_450212_1.jpg') center center no-repeat;
-  background-size: cover;
-
-  &:before {
-    position:absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: $left-bgColor;
+@media only screen and (max-width:750px) {
+  .row {
+    padding-top: 90px;
+  }
+  #news {
+    height: 100px;
+    font-size: 20px;
+  }
+  #news input {
+    height: 25px;
+  }
+  #btn {
+    padding: 4px;
+  }
+  .column3 {
+    width:50%;
+    max-width:50%;
+  }
+  .column .buy a {
+    font-size: 20px;
+  }
+  .column .men {
+    font-size: 20px;
+    padding: 3px 8px;
+  }
+  .fa-angle-right {
+    font-size:40px;
+    padding-left: 5px;
   }
 }
 
-.screen.right {
-  right:0;
-  background: url('https://preview.ibb.co/mToPCR/seth_doyle_82563_1.jpg') center center no-repeat;
-  background-size: cover;
-
-  &:before {
-    position:absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: $right-bgColor;
+@media only screen and (max-width:565px) {
+  .logo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 30%;
+  }
+  .row {
+    padding-top: 140px;
+  }
+  .column .men {
+    font-size: 18px;
+  }
+  .column .buy {
+    padding-bottom: 15px;
+  }
+  .row2 {
+    margin-top: 15px;
+  }
+  #news {
+    margin-top: 35px;
+  }
+  .nav2 a {
+    font-size: 14px;
+  }
+  .search input {
+    height:20px;
+    width: 100px;
+    padding-bottom: 4px;
+  }
+  .search button {
+    width: 20px;
+    height: 20px;
+  }
+  .fa-search {
+    font-size:12px;
+  }
+  .fa-angle-right {
+    font-size: 30px;
+    padding-left: 10px;
   }
 }
 
-
-.screen.left, .screen.right, .screen.right:before, .screen.left:before {
-  transition: $animateSpeed all ease-in-out;
-}
-
-.hover-left .left {
-  width: $hover-width;
-}
-
-.hover-left .right {
-  width: $small-width;
-}
-
-.hover-left .right:before {
-  z-index: 2;
-}
-
-// Hover right screen
-
-.hover-right .right {
-  width: $hover-width;
-}
-
-.hover-right .left {
-  width: $small-width;
-}
-
-.hover-right .left:before {
-  z-index: 2;
-}
-
-/**** Responsive *****/
-
-@media(max-width: 800px) {
-  h1 {
-    font-size: 2rem;
+@media only screen and (max-width: 450px) {
+  .nav1 {
+    font-size: 14px;
+    padding: 11px;
+    padding-right: 30px;
   }
-
-  .button {
-    width: 12rem;
+  .dropdown .dropbtn {
+    font-size: 14px;
   }
-}
-
-@media(max-height: 700px) {
-  .button {
-    top: 70%;
+  .dropdown-content a {
+    padding: 6px 10px;
+  }
+  .column3 {
+    width:100%;
+    max-width:100%;
+  }
+  .row {
+    padding-top: 180px;
+  }
+  .column {
+    padding-bottom:0;
+  }
+  .column .men {
+    font-size: 15px;
+  }
+  .column .buy {
+    padding-bottom: 15px;
+  }
+  .column .buy a {
+    font-size:15px;
+  }
+  .row2 {
+    padding:4px;
+  }
+  .fa-angle-right {
+    padding-left:14px;
   }
 }
