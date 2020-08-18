@@ -1,10 +1,10 @@
 import React from 'react';
-import DropDown from "./components/Dropdown/DropDown";
+import Footing from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
-      <DropDown/>
+      <Footing/>
     </div>
   );
 }
