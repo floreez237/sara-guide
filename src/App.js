@@ -6,6 +6,7 @@ import CustomCarousel from './components/CustomCarousol/CustomCarousel'
 function App() {
   return (
     <div className="App">
+      <DropDown/>
       <CustomCarousel/>
     </div>
   );
