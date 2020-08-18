@@ -24,7 +24,7 @@ export default class NavigationHeader extends React.Component {
                             <NavDropdown.Item>Ivory Coast</NavDropdown.Item>
                             <NavDropdown.Item>Liberia</NavDropdown.Item>
                             <NavDropdown.Item>Guinea</NavDropdown.Item>
-                            <NavDropdown.Item>Gabon</NavDropdown.Item>
+                            <NavDropdown.Item>Congo</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>
