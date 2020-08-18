@@ -1,10 +1,10 @@
 import React from 'react';
-import NavigationHeader from "./components/Header/NavigationHeader";
+import Footing from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
-        <div><NavigationHeader/></div>
+      <Footing/>
     </div>
   );
 }
