@@ -1,10 +1,10 @@
 import React from 'react';
-import DropDown from "./components/Dropdown/DropDown";
+import CustomDropDown from "./components/Dropdown/CustomDropdown";
 
 function App() {
   return (
     <div>
-      <DropDown/>
+      <CustomDropDown/>
     </div>
   );
 }
