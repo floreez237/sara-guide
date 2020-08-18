@@ -1,10 +1,10 @@
 import React from 'react';
-import CustomDrop from "./components/Dropdown/CustomDropdown";
+import NavigationHeader from "./components/Header/NavigationHeader";
 
 function App() {
   return (
     <div>
-      <CustomDrop/>
+        <div><NavigationHeader/></div>
     </div>
   );
 }
