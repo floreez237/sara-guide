@@ -10,8 +10,8 @@ import CustomAccordion from './components/CustomAccordion/CustomAccordion'
 function App() {
   return (
     <div>
-        {/* <CustomAccordion/> */}
-        <MainComponent/>
+        <CustomAccordion/>
+        {/* <MainComponent/> */}
       {/* <Navigation/> */}
       {/* <LanguageHeader/> */}
     </div>
