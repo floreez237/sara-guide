@@ -7,7 +7,7 @@ import Footing from "./components/footer/Footer";
 function App() {
   return (
     <div>
-      <Navigation/>
+      {/* <Navigation/> */}
       {/* <LanguageHeader/> */}
       <Footing/>
     </div>

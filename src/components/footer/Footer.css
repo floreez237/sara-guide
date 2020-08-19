@@ -17,7 +17,7 @@ body {
 
 .h1{text-align:center; font-size: 29px; font-family:Serif;}
 .image {width:34%; height: 200px;location:absolute; border:solid;padding:5px;border-width:1px; border-color:grey; float:left; }
-p {font-family:Sans-Serif; text-align:left; font-size: 20px}
+p {font-family:Sans-Serif; text-align:center; font-size: 20px}
 
 a {
     color: #FF0000;
@@ -95,6 +95,7 @@ a:hover {
 }
 .text{
     color:black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /* footer */
@@ -119,10 +120,12 @@ footer {
 
 .social-links-container {
     padding: 1rem 2rem 2rem;
+    height: 100px;
 }
 
 .social-links {
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 .social-link {
@@ -174,5 +177,8 @@ footer {
         box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
         padding: 1.05em;
 
+    }
+    #buttonOutline:hover{
+        background-color: rgb(0, 0, 0);
     }
 }
