@@ -6,8 +6,29 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class NavigationHeader extends React.Component {
+    state={selectedCountry:"Country",
+            selectedLanguage:"Language"};
 
+    onClickCountry = (country)=>{
+        this.setState({selectedCountry:country})
+    }
+
+    onClickLanguage = (lang) =>{
+        this.setState({selectedLanguage:lang})
+    }
     render() {
+        const countries = ['Cameroon', 'Ivory Coast', 'Liberia', 'Guinea', 'Congo'];
+        const countryItems = countries.map((country,id) =>
+            <NavDropdown.Item key={id} onClick={()=>this.onClickCountry(country)}>
+                {country}
+            </NavDropdown.Item>
+        );
+        const languages = ['English','French']
+        const languageItems = languages.map((lang,id)=>(
+            <NavDropdown.Item key={id} onClick={()=>this.onClickLanguage(lang)}>
+                {lang}
+            </NavDropdown.Item>
+        ));
         return (
             <div>
                 <input className="invisible" type="radio" name="tab" id="1" defaultChecked/>
@@ -19,18 +40,13 @@ export default class NavigationHeader extends React.Component {
                     <label htmlFor="2" className="item">Doc</label>
                     <label htmlFor="3" className="item">Contact</label>
                     <Nav>
-                        <NavDropdown title="Country" id="dropdown">
-                            <NavDropdown.Item>Cameroon</NavDropdown.Item>
-                            <NavDropdown.Item>Ivory Coast</NavDropdown.Item>
-                            <NavDropdown.Item>Liberia</NavDropdown.Item>
-                            <NavDropdown.Item>Guinea</NavDropdown.Item>
-                            <NavDropdown.Item>Congo</NavDropdown.Item>
+                        <NavDropdown title={this.state.selectedCountry} id="dropdown">
+                            {countryItems}
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <NavDropdown title="Language" id="dropdown">
-                            <NavDropdown.Item>English</NavDropdown.Item>
-                            <NavDropdown.Item>French</NavDropdown.Item>
+                        <NavDropdown title={this.state.selectedLanguage} id="dropdown">
+                            {languageItems}
                         </NavDropdown>
                     </Nav>
                 </div>
