@@ -1,6 +1,7 @@
 import React from 'react';
 import Footing from "./components/footer/Footer";
 
+
 function App() {
   return (
     <div>
