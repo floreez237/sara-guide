@@ -4,12 +4,14 @@ import logo from './logo.svg';
 import './App.css';
 import MainComponent from './components/MainComponent/MainComponent'
 import Footing from './components/footer/Footer'
+import CustomAccordion from './components/CustomAccordion/CustomAccordion'
 
 
 function App() {
   return (
     <div>
-        <MainComponent/>
+        <CustomAccordion/>
+        {/* <MainComponent/> */}
       {/* <Navigation/> */}
       {/* <LanguageHeader/> */}
     </div>
