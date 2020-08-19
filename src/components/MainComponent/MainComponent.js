@@ -7,7 +7,7 @@ class MainComponent extends React.Component {
     render() {
         return (
             <div style = {{backgroundColor : "white"}}>
-                <div style={{ marginBottom: "9px" }}>
+                <div style={{ marginBottom: "9px"}}>
                     <DropDown />
                 </div>
                 <div style = {{position : "relative"}}>
