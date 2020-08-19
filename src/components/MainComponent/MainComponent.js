@@ -3,6 +3,7 @@ import CustomCarousel from '../CustomCarousol/CustomCarousel';
 import DropDown from '../Header/NavigationHeader';
 import Footing from "../footer/Footer";
 import Split from "../Split/split"
+import CustomAccordion from "../CustomAccordion/CustomAccordion"
 
 class MainComponent extends React.Component {
     render() {

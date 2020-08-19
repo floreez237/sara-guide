@@ -84,7 +84,7 @@ class CustomAccordion extends React.Component {
                                 a. To other wallet
                             </Card.Body>
                         </Accordion.Collapse>
-
+                        
                         <Accordion.Collapse eventKey="23">
                             <Card.Body>
                                 c. Flash Transfer
