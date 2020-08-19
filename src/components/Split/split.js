@@ -17,7 +17,7 @@ export default class Split extends  Component {
                     </div>
                     <div className="column">
                         <a href="#men" className="men">SARA BANKING</a> <br/>
-                        <img src={img2}/>
+                        <img src={img1}/>
                     </div>
                 </div>
             </div>

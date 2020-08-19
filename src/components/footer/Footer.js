@@ -15,7 +15,7 @@ class Footing extends Component {
                 
                 {/* <footer className=""> */}
 
-                    <div >
+                    <div style = {{backgroundColor : "#E4E4E4", paddingBottom: "30px", paddingTop : "10px"}}>
                         <h1 className="header h1"> About Us </h1>
                         <p className="text">Learn all about our history, our vision, our strategy to become the african
                         bank of
