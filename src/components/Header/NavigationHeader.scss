@@ -1,6 +1,10 @@
 $tab-number: 5;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap');
 
+$theme-colors: (
+        "primary": #d90000,
+        "danger": #ff4136
+);
 :root {
   //background: #242423;
   //color: #fff;
@@ -9,16 +13,31 @@ $tab-number: 5;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#dropdown{
+  color: black;
+  margin-top: 10px;
+}
+.title-item{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  //padding-right: 43%;
+  margin-right: 43%;
+}
+
 .nav {
   display: flex;
 
   .static-item {
-    padding: 0 975px 0 10px;
+    padding: 0 0 0 10px;
     cursor: pointer;
     user-select: none;
     position: relative;
     overflow: hidden;
-    margin: 0;
+    margin: 0 50% 0 0;
+    min-width: 200px;
+    min-height: 65px;
+    display: inline-block;
   }
 
   .grow {

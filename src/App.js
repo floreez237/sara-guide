@@ -2,13 +2,12 @@ import React from 'react';
 import DropDown from "./components/Header/NavigationHeader";
 import logo from './logo.svg';
 import './App.css';
-import CustomCarousel from './components/CustomCarousol/CustomCarousel'
+import MainComponent from './components/MainComponent/MainComponent'
 
 function App() {
   return (
-    <div className="App">
-      <DropDown/>
-      <CustomCarousel/>
+    <div>
+        <MainComponent/>
     </div>
   );
 }

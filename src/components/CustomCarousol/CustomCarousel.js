@@ -2,8 +2,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from 'react';
 import './styles.css'
-import image1 from '../../resources/images/image1.jpg'
-import image2 from '../../resources/images/image2.jpg'
+import image1 from '../../resources/images/image1.png'
+import image2 from '../../resources/images/image2.png'
 import image3 from '../../resources/images/image3.jpg'
 import image4 from '../../resources/images/image4.jpg'
 import Image from 'react-bootstrap/Image'
@@ -34,7 +34,7 @@ class CustomCarousel extends React.Component {
         const maxHeight = "92%"
         return (
             <div
-            // style = {{position : "absolute",
+            // style = {{position : "fixed",
             //           marginBottom : "20px"}}
             >
                 <Carousel
@@ -58,63 +58,72 @@ class CustomCarousel extends React.Component {
                     style={{ height: "70%", }}
                 >
                     <div>
-                        <Image
-                            style={{
-                                width: "80%",
-                                height: 680,
-                                resizeMode: 'stretch',
-                                backgroundImage: `url(${image1})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                borderStyle: "none",
-                            }}
+                        <center>
+                            <Image
+                                style={{
+                                    width: "100%",
+                                    height: 680,
+                                    resizeMode: 'stretch',
+                                    backgroundImage: `url(${image1})`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundSize: "cover",
+                                    borderStyle: "none",
+                                }}
                             // source={image1}
-                        />
+                            />
+                        </center>
                     </div>
 
                     <div>
-                        <Image
-                            style={{
-                                width: "80%",
-                                height: 680,
-                                resizeMode: 'stretch',
-                                backgroundImage: `url(${image2})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                borderStyle: "none",
-                            }}
+                        <center>
+                            <Image
+                                style={{
+                                    width: "100%",
+                                    height: 680,
+                                    resizeMode: 'stretch',
+                                    backgroundImage: `url(${image2})`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundSize: "cover",
+                                    borderStyle: "none",
+                                }}
                             // source={image2}
-                        />
+                            />
+                        </center>
                     </div>
 
                     <div>
-                        <Image
-                            style={{
-                                width: "80%",
-                                height: 680,
-                                resizeMode: 'stretch',
-                                backgroundImage: `url(${image3})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                borderStyle: "none",
-                            }}
+                        <center>
+                            <Image
+                                style={{
+                                    width: "100%",
+                                    height: 680,
+                                    resizeMode: 'stretch',
+                                    backgroundImage: `url(${image3})`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundSize: "cover",
+                                    borderStyle: "none",
+                                }}
                             // source={image1}
-                        />
+                            />
+                        </center>
                     </div>
 
                     <div>
-                        <Image
-                            style={{
-                                width: "80%",
-                                height: 680,
-                                resizeMode: 'stretch',
-                                backgroundImage: `url(${image4})`,
-                                backgroundRepeat: "no-repeat",
-                                backgroundSize: "cover",
-                                borderStyle: "none",
-                            }}
+                        <center>
+                            <Image
+                                style={{
+                                    width: "100%",
+                                    height: 680,
+                                    resizeMode: 'stretch',
+                                    backgroundImage: `url(${image4})`,
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundSize: "cover",
+                                    borderStyle: "none",
+                                }}
                             // source={image1}
-                        />
+                            />
+                        </center>
+
                     </div>
 
                     {/* <div style={{
