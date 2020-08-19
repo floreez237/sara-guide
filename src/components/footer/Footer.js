@@ -41,15 +41,15 @@ class Footing extends Component {
                             <div className="social-links flex-row">
                                 <div className="social-link">
                                     {/*<a href="#"> <i className="fab fa-facebook-f"></i></a>*/}
-                                    <img src={fb}></img>
+                                    <img src={fb} alt="Facebook"/>
                                 </div>
                                 <div className="social-link">
                                     {/*<a href="#"><i className="fab fa-twitter"></i></a>*/}
-                                    <img src={tw}></img>
+                                    <img src={tw} alt="Twitter"/>
                                 </div>
                                 <div className="social-link">
                                     {/*<a href="#"><i className="fab fa-linkedin"></i></a>*/}
-                                    <img src={li}></img>
+                                    <img src={li} alt="LinkedIn"/>
                                 </div>
 
                             </div>
