@@ -24,18 +24,20 @@ $theme-colors: (
   //padding-right: 43%;
   margin-right: 43%;
 }
+.logo{
+  display: inline-block;
+}
 .nav {
   display: flex;
-
   .static-item {
-    padding: 0 0 0 10px;
+    //padding: 0 0 0 10px;
     cursor: pointer;
     user-select: none;
     position: relative;
     overflow: hidden;
-    margin: 0 50% 0 0;
-    min-width: 200px;
-    min-height: 65px;
+    margin: 3px 45% 0 5px;
+    min-width: 240px;
+    min-height: 45px;
     display: inline-block;
   }
 
