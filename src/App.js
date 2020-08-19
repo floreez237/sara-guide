@@ -1,10 +1,14 @@
 import React from 'react';
-import DropDown from "./components/Header/NavigationHeader";
+import Navigation from './components/Header/NavigationHeader';
+import LanguageHeader from './components/Header/LanguageHeader';
+import Footing from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
-      <DropDown/>
+      <Navigation/>
+      <LanguageHeader/>
+      <Footing/>
     </div>
   );
 }
