@@ -20,10 +20,18 @@ class CustomAccordion extends React.Component {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
                                             <Card.Body>
-                                                a. Edit user details
+                                                <Card.Text>
+                                                <text>a. Edit user details</text>
+                                                </Card.Text>
+                                                <Card.Text>
+                                                <text>b. Change PIN</text>
+                                                </Card.Text>
+                                                <Card.Text>
+                                                <text>c. Add address</text>
+                                                </Card.Text>
                                             </Card.Body>
                                         </Accordion.Collapse>
-                                        <Accordion.Collapse eventKey="1">
+                                        {/* <Accordion.Collapse eventKey="1">
                                             <Card.Body>
                                                 b. Change PIN
                                             </Card.Body>
@@ -32,7 +40,7 @@ class CustomAccordion extends React.Component {
                                             <Card.Body>
                                                 c. Add address
                                             </Card.Body>
-                                        </Accordion.Collapse>
+                                        </Accordion.Collapse> */}
                                     </Card>
                                 </Accordion>
                                 <Accordion defaultActiveKey="0">
@@ -78,7 +86,7 @@ class CustomAccordion extends React.Component {
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="23">
                             4. Fund Transfer
-                        </Accordion.Toggle>  
+                        </Accordion.Toggle>
                         <Accordion.Collapse eventKey="23">
                             <Card.Body>
                                 a. To other wallet
@@ -88,23 +96,23 @@ class CustomAccordion extends React.Component {
                         <Accordion.Collapse eventKey="23">
                             <Card.Body>
                                 <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="20">
-                                        b. To an AFB bank account
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="20">
+                                            b. To an AFB bank account
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="20">
-                                        <Card.Body>
-                                            i. Choose from beneficiary list
+                                        <Accordion.Collapse eventKey="20">
+                                            <Card.Body>
+                                                i. Choose from beneficiary list
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                   < Accordion.Collapse eventKey="20">
-                                        <Card.Body>
-                                            ii. Enter beneficiary account number
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="20">
+                                            <Card.Body>
+                                                ii. Enter beneficiary account number
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                        </Accordion.Collapse>
+                                    </Card>
                                 </Accordion>
-                                
+
                             </Card.Body>
                         </Accordion.Collapse>
                         <Accordion.Collapse eventKey="23">
@@ -116,7 +124,7 @@ class CustomAccordion extends React.Component {
                             <Card.Body>
                                 d. Via QR code
                             </Card.Body>
-                        </Accordion.Collapse>      
+                        </Accordion.Collapse>
                     </Card>
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="4">
@@ -130,37 +138,37 @@ class CustomAccordion extends React.Component {
                         <Accordion.Collapse eventKey="21">
                             <Card.Body>
                                 <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="21">
-                                        a. Product
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="21">
+                                            a. Product
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="21">
-                                        <Card.Body>
-                                            i. Subscribtion for bank card
+                                        <Accordion.Collapse eventKey="21">
+                                            <Card.Body>
+                                                i. Subscribtion for bank card
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                   < Accordion.Collapse eventKey="21">
-                                        <Card.Body>
-                                            ii. Application for new account
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="21">
+                                            <Card.Body>
+                                                ii. Application for new account
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                        </Accordion.Collapse>
+                                    </Card>
                                 </Accordion>
                                 <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="21">
-                                        b. Service
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="21">
+                                            b. Service
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="21">
-                                        <Card.Body>
-                                            i. Exchange rates
+                                        <Accordion.Collapse eventKey="21">
+                                            <Card.Body>
+                                                i. Exchange rates
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                        </Accordion.Collapse>
+                                    </Card>
                                 </Accordion>
                             </Card.Body>
                         </Accordion.Collapse>
-                       
+
                     </Card>
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="22">
@@ -169,38 +177,38 @@ class CustomAccordion extends React.Component {
                         <Accordion.Collapse eventKey="22">
                             <Card.Body>
                                 <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="22">
-                                        a. Airtime
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="22">
+                                            a. Airtime
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="22">
-                                        <Card.Body>
-                                            i. My number
+                                        <Accordion.Collapse eventKey="22">
+                                            <Card.Body>
+                                                i. My number
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                   < Accordion.Collapse eventKey="22">
-                                        <Card.Body>
-                                            ii. Other number
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="22">
+                                            <Card.Body>
+                                                ii. Other number
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                        </Accordion.Collapse>
+                                    </Card>
                                 </Accordion>
                                 <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="22">
-                                        b. Data
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="22">
+                                            b. Data
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="22">
-                                        <Card.Body>
-                                            i. My number
+                                        <Accordion.Collapse eventKey="22">
+                                            <Card.Body>
+                                                i. My number
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                   < Accordion.Collapse eventKey="22">
-                                        <Card.Body>
-                                            ii. Other number
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="22">
+                                            <Card.Body>
+                                                ii. Other number
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                        </Accordion.Collapse>
+                                    </Card>
                                 </Accordion>
                             </Card.Body>
                         </Accordion.Collapse>
@@ -212,36 +220,36 @@ class CustomAccordion extends React.Component {
                         <Accordion.Collapse eventKey="7">
                             <Card.Body>
                                 <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="7">
-                                        a. Robs tontine
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="7">
+                                            a. Robs tontine
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="7">
-                                        <Card.Body>
-                                            i. New payment
+                                        <Accordion.Collapse eventKey="7">
+                                            <Card.Body>
+                                                i. New payment
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                   < Accordion.Collapse eventKey="7">
-                                        <Card.Body>
-                                            ii. Contribute
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="7">
+                                            <Card.Body>
+                                                ii. Contribute
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                    < Accordion.Collapse eventKey="7">
-                                        <Card.Body>
-                                            iii. Tontine history
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="7">
+                                            <Card.Body>
+                                                iii. Tontine history
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                    < Accordion.Collapse eventKey="7">
-                                        <Card.Body>
-                                            iv. Pending approval
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="7">
+                                            <Card.Body>
+                                                iv. Pending approval
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                    < Accordion.Collapse eventKey="7">
-                                        <Card.Body>
-                                            v. Payment history
+                                        </Accordion.Collapse>
+                                        < Accordion.Collapse eventKey="7">
+                                            <Card.Body>
+                                                v. Payment history
                                         </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
+                                        </Accordion.Collapse>
+                                    </Card>
                                 </Accordion>
                             </Card.Body>
                         </Accordion.Collapse>
