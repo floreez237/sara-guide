@@ -1,11 +1,12 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import './style.css'
 
 class CustomAccordion extends React.Component {
     render() {
         return (
-            <div>
+            <div className='align-left'>
                 <Accordion defaultActiveKey="-1">
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">

@@ -1,0 +1,10 @@
+.align-left{
+    display : flex;
+    width: 20%;
+    /* margin: auto; */
+    /* border-radius: 10px; */
+    /* border: 3px dashed #1c87c9; */
+    align-items:center;
+    left: 0px;
+    /* justify-content:center; */
+} 
