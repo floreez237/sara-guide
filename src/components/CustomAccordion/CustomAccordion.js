@@ -1,11 +1,12 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
+import './style.css'
 
 class CustomAccordion extends React.Component {
     render() {
         return (
-            <div>
+            <div className = 'left-container'>
                 <Accordion defaultActiveKey="-1">
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -18,20 +19,12 @@ class CustomAccordion extends React.Component {
                                         <Accordion.Toggle as={Card.Header} eventKey="1">
                                             A. Account Management
                                         </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="1">
-                                            <Card.Body>
-                                                <Card.Text>
-                                                <text>a. Edit user details</text>
-                                                </Card.Text>
-                                                <Card.Text>
-                                                <text>b. Change PIN</text>
-                                                </Card.Text>
-                                                <Card.Text>
-                                                <text>c. Add address</text>
-                                                </Card.Text>
+                                        <Accordion.Collapse eventKey="1" >
+                                            <Card.Body style ={{margin : "0 auto"}}>
+                                                <text >a. Edit user details</text>         
                                             </Card.Body>
                                         </Accordion.Collapse>
-                                        {/* <Accordion.Collapse eventKey="1">
+                                        <Accordion.Collapse eventKey="1">
                                             <Card.Body>
                                                 b. Change PIN
                                             </Card.Body>
@@ -40,7 +33,7 @@ class CustomAccordion extends React.Component {
                                             <Card.Body>
                                                 c. Add address
                                             </Card.Body>
-                                        </Accordion.Collapse> */}
+                                        </Accordion.Collapse>
                                     </Card>
                                 </Accordion>
                                 <Accordion defaultActiveKey="0">

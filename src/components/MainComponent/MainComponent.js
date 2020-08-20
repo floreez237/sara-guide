@@ -8,22 +8,24 @@ import CustomAccordion from "../CustomAccordion/CustomAccordion"
 class MainComponent extends React.Component {
 
     render() {
-        const {onChangeLanguage} = this.props
+        const { onChangeLanguage } = this.props
         return (
-        //     <div style = {{backgroundColor : "white"}}>
-        //         <div style={{ marginBottom: "9px"}}>
-        //             <NavigationHeader onChangeLanguage={onChangeLanguage}/>
-        //         </div>
-        //         <div style = {{position : "relative",}}>
-        //             <CustomCarousel />
-        //         </div>
-        //         <div style = {{backgroundColor: "#f4f4f4"}}>
-        //             <Split/>
-        //         </div>
-        //             <Footing />
 
-        //     </div>
-        <CustomAccordion/>
+
+            <div style={{ backgroundColor: "white" }}>
+                    <div style={{ marginBottom: "9px" }}>
+                        <NavigationHeader onChangeLanguage={onChangeLanguage} />
+                    </div>
+                    <div style={{ position: "relative", }}>
+                        <CustomCarousel />
+                    </div>
+                    <div style={{ backgroundColor: "#f4f4f4" }}>
+                        <Split />
+                    </div>
+                    <Footing />
+
+            </div>
+            // <CustomAccordion/>
         )
     }
 }

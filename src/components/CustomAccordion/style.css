@@ -1,0 +1,6 @@
+.left-container{
+    display: flex;
+    width: 20%;
+    left:Opx; 
+    margin: "4px 0"
+}

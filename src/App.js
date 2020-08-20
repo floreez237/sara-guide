@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import MainComponent from './components/MainComponent/MainComponent'
 
-// import Footing from './components/footer/Footer'
-// import CustomAccordion from './components/CustomAccordion/CustomAccordion'
-// import DocPage from './components/DocPage/DocPage'
-// import Navigation from './components/Header/NavigationHeader'
+import Footing from './components/footer/Footer'
+import CustomAccordion from './components/CustomAccordion/CustomAccordion'
+import DocPage from './components/DocPage/DocPage'
+import Navigation from './components/Header/NavigationHeader'
 
 
 // function App() {
@@ -34,12 +34,11 @@ export default class App extends React.Component {
     catalogs= {en:catalogEn,fr:catalogFr}
     render() {
         return (
-          
-            // <I18nProvider language={this.state.language} catalogs={this.catalogs}>
-            //     <MainComponent onChangeLanguage={this.changeLanguage}/>
-            // </I18nProvider>
+            <I18nProvider language={this.state.language} catalogs={this.catalogs}>
+                <MainComponent onChangeLanguage={this.changeLanguage}/>
+            </I18nProvider>
         );
     }
-
-
 }
+
+export default App
