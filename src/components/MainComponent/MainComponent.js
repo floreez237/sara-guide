@@ -23,7 +23,6 @@ class MainComponent extends React.Component {
                         <Split />
                     </div>
                     <Footing />
-
             </div>
             // <CustomAccordion/>
         )

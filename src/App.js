@@ -34,11 +34,10 @@ export default class App extends React.Component {
     catalogs= {en:catalogEn,fr:catalogFr}
     render() {
         return (
+          // <Navigation/>
             <I18nProvider language={this.state.language} catalogs={this.catalogs}>
                 <MainComponent onChangeLanguage={this.changeLanguage}/>
             </I18nProvider>
         );
     }
 }
-
-export default App
