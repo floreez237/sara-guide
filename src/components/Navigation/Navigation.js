@@ -5,23 +5,27 @@ import CustomAccordion from '../CustomAccordion/CustomAccordion'
 import {I18nProvider} from "@lingui/react";
 import catalogFr from '../../locale/fr/messages';
 import catalogEn from '../../locale/en/messages';
+import MainComponentLang from '../MainComponentLang/MainComponentLang'
 
 
 class Navigation extends React.Component {
+    constructor(props){
+        super(props)
+        this.changeLanguage = this.changeLanguage.bind(this)
+    }
     state = {language:"en"}
 
     changeLanguage = (lang)=>this.setState({language:lang});
 
     catalogs= {en:catalogEn,fr:catalogFr}
+
     render() {
         return (
             <Router>
                 <div>
                     <Switch>
-                        <Route exact path='/' render={(routeProps) => (
-                            <I18nProvider language={this.state.language} catalogs={this.catalogs}>
-                                <MainComponent onChangeLanguage={this.changeLanguage} {...routeProps} />
-                            </I18nProvider>)} />
+                        <Route exact path='/' render={(routeProps) => (<MainComponentLang
+                            {...routeProps} />)} />
 
                         <Route path='/Doc' render={(routeProps) => (<CustomAccordion
                             {...routeProps} />)} />
