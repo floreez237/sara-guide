@@ -4,29 +4,48 @@ import logo from './../../resources/images/Logo_Afriland.png';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Trans} from "@lingui/macro";
 
 export default class NavigationHeader extends React.Component {
-    state={selectedCountry:"Country",
-            selectedLanguage:"Language"};
+    state = {
+        selectedCountry: "Cameroon",
+        selectedLanguage: "English"
+    };
+    countries = {'Cameroon':<Trans>Cameroon</Trans>,
+        'Ivory Coast':<Trans>Ivory Coast</Trans>,
+        'Liberia':<Trans>Liberia</Trans>,
+        'Guinea':<Trans>Guinea</Trans>,
+        'Congo':<Trans>Congo</Trans>};
 
-    onClickCountry = (country)=>{
-        this.setState({selectedCountry:country})
+    languages = {'English':<Trans>English</Trans>,
+        'French':<Trans>French</Trans>};
+    onClickCountry = (country) => {
+        if (this.state.selectedCountry !== country) {
+            this.setState({selectedCountry: this.countries[country]});
+        }
     }
 
-    onClickLanguage = (lang) =>{
-        this.setState({selectedLanguage:lang})
+    onClickLanguage = (lang) => {
+        if (this.state.selectedLanguage !== lang) {
+            this.setState({selectedLanguage: this.languages[lang]})
+            if (lang === 'English') {
+                this.props.onChangeLanguage("en");
+            } else if (lang === 'French') {
+                this.props.onChangeLanguage("fr");
+            }
+        }
     }
+
     render() {
-        const countries = ['Cameroon', 'Ivory Coast', 'Liberia', 'Guinea', 'Congo'];
-        const countryItems = countries.map((country,id) =>
-            <NavDropdown.Item key={id} onClick={()=>this.onClickCountry(country)}>
-                {country}
+        const countryItems = Object.keys(this.countries).map((country, id) =>
+            <NavDropdown.Item key={id} onClick={() => this.onClickCountry(country)}>
+                {this.countries[country]}
             </NavDropdown.Item>
         );
-        const languages = ['English','French']
-        const languageItems = languages.map((lang,id)=>(
-            <NavDropdown.Item key={id} onClick={()=>this.onClickLanguage(lang)}>
-                {lang}
+
+        const languageItems = Object.keys(this.languages).map((lang, id) => (
+            <NavDropdown.Item key={id} onClick={() => this.onClickLanguage(lang)}>
+                {this.languages[lang]}
             </NavDropdown.Item>
         ));
         return (
@@ -36,9 +55,9 @@ export default class NavigationHeader extends React.Component {
                 <input className="invisible" type="radio" name="tab" id="3"/>
                 <div className="nav">
                     <img src={logo} alt="Afriland Logo" className="static-item grow"/>
-                    <label htmlFor="1" className="item">Home</label>
-                    <label htmlFor="2" className="item">Doc</label>
-                    <label htmlFor="3" className="item">Contact</label>
+                    <label htmlFor="1" className="item"><Trans>Home</Trans></label>
+                    <label htmlFor="2" className="item"><Trans>Doc</Trans></label>
+                    <label htmlFor="3" className="item"><Trans>Contact</Trans></label>
                     <Nav>
                         <NavDropdown title={this.state.selectedCountry} id="dropdown">
                             {countryItems}
