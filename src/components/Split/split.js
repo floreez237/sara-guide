@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './split_style.scss';
 import img1 from '../../resources/Afimage.jpg';
+import {Link} from 'react-router-dom'
 
 class Split extends Component {
 
@@ -18,9 +19,9 @@ class Split extends Component {
                     <div className="column large-left">
                         {/* <div > */}
                         <a href="#women" className="men">SARA WALLET</a> <br/>
-                        {/* <Link to="/Doc"> */}
+                        <Link to="/Doc">
                             <img onClick={this.goToSaraWallet} className="clothing" src={img1} alt="Sara Wallet" />
-                        {/* </Link> */}
+                        </Link>
 
                         {/* </div> */}
 
