@@ -11,7 +11,8 @@ class Navigation extends React.Component {
     state = {
         language: "en",
         selectedCountry: "Cameroon",
-        radioButtons: [true, false, false]
+        radioButtons: [true, false, false],
+        docAccessible:false,
     };
 
     changeRadioButtons = (radioButtons) => this.setState({radioButtons: radioButtons});
@@ -20,6 +21,7 @@ class Navigation extends React.Component {
 
     changeCountry = (country) => this.setState({selectedCountry: country});
 
+    changeDocAccessibility = (access)=>this.setState({docAccessible:access})
 
     catalogs = {en: catalogEn, fr: catalogFr}
 
@@ -47,28 +49,29 @@ class Navigation extends React.Component {
                                                    selectedCountry={this.state.selectedCountry}
                                                    onChangeCountry={this.changeCountry}
                                                    radioButtons={this.state.radioButtons}
-                                                   changeRadioButtons={this.changeRadioButtons}/>
-                                </I18nProvider>
-                            )
+                                                   changeRadioButtons={this.changeRadioButtons}
+                                    changeDocAccessible={this.changeDocAccessibility}/>
 
+                                </I18nProvider>
+                            );
                         }}/>
 
                         <Route exact path="/">
                             <Redirect push to='/home'/>
                         </Route>
                         <Route path='/Doc' render={() => {
-                            return (
-                                <I18nProvider language={this.state.language} catalogs={this.catalogs}>
+                            return (this.state.docAccessible?
+                                (<I18nProvider language={this.state.language} catalogs={this.catalogs}>
                                     <DocPage onChangeLanguage={this.changeLanguage}
                                              selectedLanguage={this.deriveSelectedLanguage(this.state.language)}
                                              selectedCountry={this.state.selectedCountry}
                                              onChangeCountry={this.changeCountry}
                                              radioButtons={this.state.radioButtons}
                                              changeRadioButtons={this.changeRadioButtons}/>
-                                </I18nProvider>
+                                </I18nProvider>):
+                                    (<Redirect to="/home"/>)
                             )
-                        }}>
-                        </Route>
+                        }}/>
 
                     </Switch>
 
