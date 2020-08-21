@@ -1,26 +1,32 @@
 import React from 'react';
 import CustomCarousel from '../CustomCarousol/CustomCarousel';
-import DropDown from '../Header/NavigationHeader';
+import NavigationHeader from '../Header/NavigationHeader';
 import Footing from "../footer/Footer";
 import Split from "../Split/split"
-import CustomAccordion from "../CustomAccordion/CustomAccordion"
 
 class MainComponent extends React.Component {
+
     render() {
         return (
-            <div style = {{backgroundColor : "white"}}>
-                <div style={{ marginBottom: "9px"}}>
-                    <DropDown />
+            <div style={{backgroundColor: "white"}}>
+                <div style={{marginBottom: "9px"}}>
+                    <NavigationHeader onChangeLanguage={this.props.onChangeLanguage}
+                                      onChangeCountry={this.props.onChangeCountry}
+                                      selectedLanguage={this.props.selectedLanguage}
+                                      selectedCountry={this.props.selectedCountry}
+                                      radioButtons={this.props.radioButtons}
+                                      onChangeButtons={this.props.changeRadioButtons}
+                    />
                 </div>
-                <div style = {{position : "relative"}}>
-                    <CustomCarousel />
+                <div style={{position: "relative",}}>
+                    <CustomCarousel/>
                 </div>
-                <div style = {{backgroundColor: "#f4f4f4"}}>
-                    <Split/>
+                <div style={{backgroundColor: "#f4f4f4"}}>
+                    <Split onChangeRadioButtons={this.props.changeRadioButtons}/>
                 </div>
-                    <Footing />
-
+                <Footing/>
             </div>
+            // <CustomAccordion/>
         )
     }
 }

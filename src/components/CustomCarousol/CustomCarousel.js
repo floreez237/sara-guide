@@ -31,7 +31,6 @@ class CustomCarousel extends React.Component {
                 items: 1
             }
         };
-        const maxHeight = "92%"
         return (
             <div
             // style = {{position : "fixed",

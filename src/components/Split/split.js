@@ -1,27 +1,31 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import './split_style.scss';
 import img1 from '../../resources/Afimage.jpg';
-import img2 from '../../resources/bank-ca.jpg';
+import {Link} from 'react-router-dom'
 
-export default class Split extends  Component {
-
-
-    render(){
+class Split extends Component {
+    render() {
         return (
-            <div className="container">
+            <div className="container ">
                 <div className="row" id="home">
-                    <div className="column">
-                        <a href="#women" className="men">SARA WALLET</a> <br/>
-                        <img className="clothing" src={img1}/>
+                    <div className="column large-left">
+                        {/* <div > */}
+                        <p className="men">SARA WALLET</p> <br/>
+                        <Link to="/Doc">
+                            <img onClick={()=>this.props.onChangeRadioButtons([false,true,false])} className="clothing" src={img1} alt="Sara Wallet"/>
+                        </Link>
 
                     </div>
                     <div className="column">
-                        <a href="#men" className="men">SARA BANKING</a> <br/>
-                        <img src={img1}/>
+                        <p className="men">SARA BANKING</p> <br />
+                        <img src={img1} alt="Sara Banking" />
                     </div>
                 </div>
+
             </div>
         );
     }
 
 }
+
+export default Split
