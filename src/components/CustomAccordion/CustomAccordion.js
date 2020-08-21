@@ -21,7 +21,7 @@ class CustomAccordion extends React.Component {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1" >
                                             <Card.Body style ={{margin : "0 auto"}}>
-                                                <text >a. Edit user details</text>         
+                                                a. Edit user details
                                             </Card.Body>
                                         </Accordion.Collapse>
                                         <Accordion.Collapse eventKey="1">

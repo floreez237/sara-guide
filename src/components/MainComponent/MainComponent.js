@@ -22,8 +22,7 @@ class MainComponent extends React.Component {
                     <CustomCarousel/>
                 </div>
                 <div style={{backgroundColor: "#f4f4f4"}}>
-                    <Split onChangeRadioButtons={this.props.changeRadioButtons}
-                           changeDocAccesibility={this.props.changeDocAccessible}/>
+                    <Split onChangeRadioButtons={this.props.changeRadioButtons}/>
                 </div>
                 <Footing/>
             </div>
