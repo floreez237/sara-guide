@@ -6,11 +6,6 @@ import catalogEn from './locale/en/messages';
 
 
 export default class App extends React.Component {
-    state = {language:"en"}
-
-    changeLanguage = (lang)=>this.setState({language:lang});
-
-    catalogs= {en:catalogEn,fr:catalogFr}
     render() {
         return (
             <Navigation/>

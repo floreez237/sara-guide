@@ -18,12 +18,10 @@ class Split extends Component {
                 <div className="row" id="home">
                     <div className="column large-left">
                         {/* <div > */}
-                        <a href="#women" className="men">SARA WALLET</a> <br/>
+                        <a className="men">SARA WALLET</a> <br/>
                         <Link to="/Doc">
                             <img onClick={this.goToSaraWallet} className="clothing" src={img1} alt="Sara Wallet" />
                         </Link>
-
-                        {/* </div> */}
 
                     </div>
                     <div className="column">

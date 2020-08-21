@@ -1,7 +1,7 @@
 .left-container{
     display: flex;
     width: 20%;
-    left:Opx; 
+    left:0px;
     /* margin: "4px 0"; */
     margin-top: 10px;
     margin-left: 10px;
