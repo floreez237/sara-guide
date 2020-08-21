@@ -10,14 +10,19 @@ class MainComponent extends React.Component {
         return (
             <div style={{backgroundColor: "white"}}>
                 <div style={{marginBottom: "9px"}}>
-                    <NavigationHeader onChangeLanguage={this.props.onChangeLanguage} onChangeCountry={this.props.onChangeCountry} selectedLanguage={this.props.selectedLanguage}
-                    selectedCountry={this.props.selectedCountry}/>
+                    <NavigationHeader onChangeLanguage={this.props.onChangeLanguage}
+                                      onChangeCountry={this.props.onChangeCountry}
+                                      selectedLanguage={this.props.selectedLanguage}
+                                      selectedCountry={this.props.selectedCountry}
+                                      radioButtons={this.props.radioButtons}
+                                      onChangeButtons={this.props.changeRadioButtons}
+                    />
                 </div>
                 <div style={{position: "relative",}}>
                     <CustomCarousel/>
                 </div>
                 <div style={{backgroundColor: "#f4f4f4"}}>
-                    <Split/>
+                    <Split onChangeRadioButtons={this.props.changeRadioButtons}/>
                 </div>
                 <Footing/>
             </div>

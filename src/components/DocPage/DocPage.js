@@ -11,7 +11,9 @@ class DocPage extends React.Component {
                     <NavigationHeader onChangeLanguage={this.props.onChangeLanguage}
                                       onChangeCountry={this.props.onChangeCountry}
                                       selectedLanguage={this.props.selectedLanguage}
-                                      selectedCountry={this.props.selectedCountry}/>
+                                      selectedCountry={this.props.selectedCountry}
+                                      radioButtons={this.props.radioButtons}
+                                      onChangeButtons={this.props.changeRadioButtons}/>
                 </div>
                 <div className="split-left">
                     <CustomAccordion/>

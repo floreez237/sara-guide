@@ -5,12 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Trans} from "@lingui/macro";
+import {withRouter} from 'react-router-dom';
 
-export default class NavigationHeader extends React.Component {
-    // state = {
-    //     selectedCountry: "Cameroon",
-    //     selectedLanguage: "English"
-    // };
+class NavigationHeader extends React.Component {
     countries = {'Cameroon':<Trans>Cameroon</Trans>,
         'Ivory Coast':<Trans>Ivory Coast</Trans>,
         'Liberia':<Trans>Liberia</Trans>,
@@ -21,20 +18,42 @@ export default class NavigationHeader extends React.Component {
         'French':<Trans>French</Trans>};
     onClickCountry = (country) => {
         if (this.props.selectedCountry !== country) {
-            // this.setState({selectedCountry: country});
             this.props.onChangeCountry(country);
         }
     }
 
     onClickLanguage = (lang) => {
         if (this.props.selectedLanguage !== lang) {
-            // this.setState({selectedLanguage: lang})
             if (lang === 'English') {
                 this.props.onChangeLanguage("en");
             } else if (lang === 'French') {
                 this.props.onChangeLanguage("fr");
             }
         }
+    }
+    arrayEquals(a, b) {
+        return Array.isArray(a) &&
+            Array.isArray(b) &&
+            a.length === b.length &&
+            a.every((val, index) => val === b[index]);
+    }
+
+    onLabelCLick = (e)=>{
+        const targetId = e.target.id;
+        const prevRadioButtons = this.props.radioButtons;
+        if (targetId === 'home') {
+            if (!this.arrayEquals(prevRadioButtons, [true, false, false])) {
+                console.log(targetId);
+                this.props.history.push('/home');
+                this.props.onChangeButtons([true, false, false]);
+            }
+        } else if (targetId === 'contact') {
+            if (!this.arrayEquals(prevRadioButtons, [false, false, true])) {
+                this.props.onChangeButtons([false, false, true]);
+            }
+        }
+
+
     }
 
     render() {
@@ -51,14 +70,15 @@ export default class NavigationHeader extends React.Component {
         ));
         return (
             <div>
-                <input className="invisible" type="radio" name="tab" id="1" defaultChecked/>
-                <input className="invisible" type="radio" name="tab" id="2"/>
-                <input className="invisible" type="radio" name="tab" id="3"/>
+                <input className="invisible" type="radio" name="tab" id="1" checked={this.props.radioButtons[0]}/>
+                <input className="invisible" type="radio" name="tab" id="2" checked={this.props.radioButtons[1]}/>
+                <input className="invisible" type="radio" name="tab" id="3" checked={this.props.radioButtons[2]}/>
                 <div className="nav">
                     <img src={logo} alt="Afriland Logo" className="static-item grow"/>
-                    <label htmlFor="1" className="item"><Trans>Home</Trans></label>
-                    <label htmlFor="2" className="item"><Trans>Doc</Trans></label>
-                    <label htmlFor="3" className="item"><Trans>Contact</Trans></label>
+                    <label id="home" className="item"
+                                 onClick={(event => this.onLabelCLick(event))}><Trans>Home</Trans></label>
+                    <label id="Doc" className="item"  onClick={(event => this.onLabelCLick(event))}><Trans>Doc</Trans></label>
+                    <label id="contact" className="item"  onClick={(event => this.onLabelCLick(event))}><Trans>Contact</Trans></label>
                     <Nav>
                         <NavDropdown title={this.countries[this.props.selectedCountry]} id="dropdown">
                             {countryItems}
@@ -74,3 +94,5 @@ export default class NavigationHeader extends React.Component {
         );
     }
 }
+
+export default withRouter(NavigationHeader);
