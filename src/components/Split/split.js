@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './split_style.scss';
 import img1 from '../../resources/Afimage.jpg';
-import { Link, withRouter } from 'react-router-dom'
 
 class Split extends Component {
 

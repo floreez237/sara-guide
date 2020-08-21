@@ -1,5 +1,6 @@
 .split-left {
-    height: 100%;
+    margin-top: 100px; /*changed here*/
+    height: 80%;
     width: 20%;
     position: fixed;
     z-index: 1;
