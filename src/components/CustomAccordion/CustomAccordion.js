@@ -6,9 +6,9 @@ import './style.css'
 class CustomAccordion extends React.Component {
     render() {
         return (
-            <div className = 'left-container'>
-                <Accordion defaultActiveKey="-1">
-                    <Card>
+            <div className = 'left-container' >
+                <Accordion defaultActiveKey="-1" >
+                    <Card >
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             1. Accounts
                         </Accordion.Toggle>
@@ -21,7 +21,7 @@ class CustomAccordion extends React.Component {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1" >
                                             <Card.Body style ={{margin : "0 auto"}}>
-                                                <text >a. Edit user details</text>         
+                                                a. Edit user details    
                                             </Card.Body>
                                         </Accordion.Collapse>
                                         <Accordion.Collapse eventKey="1">

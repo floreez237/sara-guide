@@ -1,4 +1,13 @@
 /* general styling */
+@font-face{
+    font-family: sansation;
+    src: url(../../resources/fonts/Lancelot-Regular.ttf)
+}
+
+@font-face{
+    font-family: lusitina;
+    src: url(../../resources/fonts/Lusitana-Regular.ttf)
+}
 
 * {
     box-sizing: border-box;
@@ -30,7 +39,7 @@ i {
 
 .header{
     color: #FF0000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sansation;
 }
 /* utility */
 
@@ -99,7 +108,27 @@ a:hover {
 }
 .text{
     color:black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:sansation;
+    font-size: 28.5px;
+}
+
+
+/*button*/
+#customButton{
+    width: 300px;
+    font-size: 25px;
+    color : #FF0000;
+    outline: none;
+    font-family: sansation;
+    &:hover{
+        background-color: #FF0000;
+        color:white
+    }
+    &:focus{
+        border-width: 1%;
+        border-color:  #FF0000;
+        box-shadow: none;
+    }
 }
 
 /* footer */

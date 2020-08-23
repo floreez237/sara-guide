@@ -1,14 +1,15 @@
 .split-left {
     margin-top: 100px; /*changed here*/
-    height: 80%;
-    width: 20%;
+    height: 90%;
+    /* width: 20%; */
     position: fixed;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
     left: 0;
-    background-color: #F7F7F7;
-    padding-top: 20px;
+    margin-left: 10px;
+    /* background-color: #F7F7F7; */
+    /* padding-top: 20px; */
 }
 
 .split-right {

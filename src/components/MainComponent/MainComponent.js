@@ -4,6 +4,7 @@ import NavigationHeader from '../Header/NavigationHeader';
 import Footing from "../footer/Footer";
 import Split from "../Split/split"
 
+
 class MainComponent extends React.Component {
 
     render() {
