@@ -8,6 +8,10 @@ import "./MainComponent.scss"
 
 class MainComponent extends React.Component {
 
+    componentDidMount() {
+        this.props.changeRadioButtons([true, false, false]);
+    }
+
     render() {
         return (
             <div style={{backgroundColor: "white"}}>

@@ -6,6 +6,10 @@ import {withRouter,Redirect} from 'react-router-dom';
 
 class DocPage extends React.Component {
 
+    componentDidMount() {
+        this.props.changeRadioButtons([false,true,false]);
+    }
+
     render() {
         try{
             if (this.props.location.state.isAccessible) {
@@ -16,8 +20,7 @@ class DocPage extends React.Component {
                                               onChangeCountry={this.props.onChangeCountry}
                                               selectedLanguage={this.props.selectedLanguage}
                                               selectedCountry={this.props.selectedCountry}
-                                              radioButtons={this.props.radioButtons}
-                                              onChangeButtons={this.props.changeRadioButtons}/>
+                                              radioButtons={this.props.radioButtons}/>
                         </div>
                         <div className="container-left">
                             <CustomAccordion/>

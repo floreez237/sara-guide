@@ -45,11 +45,11 @@ class NavigationHeader extends React.Component {
             if (!this.arrayEquals(prevRadioButtons, [true, false, false])) {
                 console.log(targetId);
                 this.props.history.push('/home');
-                this.props.onChangeButtons([true, false, false]);
             }
+            // this.props.history.push('/home');
         } else if (targetId === 'contact') {
             if (!this.arrayEquals(prevRadioButtons, [false, false, true])) {
-                this.props.onChangeButtons([false, false, true]);
+                // this.props.onChangeButtons([false, false, true]);
             }
         }
 
