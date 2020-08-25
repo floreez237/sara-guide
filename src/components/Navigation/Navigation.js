@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import catalogFr from '../../locale/fr/messages';
 import catalogEn from '../../locale/en/messages';
 import DocPage from "../DocPage/DocPage";
@@ -11,7 +11,7 @@ class Navigation extends React.Component {
     state = {
         language: "en",
         selectedCountry: "Cameroon",
-        radioButtons: [true, false, false]
+        radioButtons: [true, false, false],
     };
 
     changeRadioButtons = (radioButtons) => this.setState({radioButtons: radioButtons});
@@ -20,6 +20,7 @@ class Navigation extends React.Component {
 
     changeCountry = (country) => this.setState({selectedCountry: country});
 
+    changeDocAccessibility = (access) => this.setState({docAccessible: access})
 
     catalogs = {en: catalogEn, fr: catalogFr}
 
@@ -48,15 +49,15 @@ class Navigation extends React.Component {
                                                    onChangeCountry={this.changeCountry}
                                                    radioButtons={this.state.radioButtons}
                                                    changeRadioButtons={this.changeRadioButtons}/>
-                                </I18nProvider>
-                            )
 
+                                </I18nProvider>
+                            );
                         }}/>
 
                         <Route exact path="/">
                             <Redirect push to='/home'/>
                         </Route>
-                        <Route path='/Doc' render={() => {
+                        <Route path='/doc' render={() => {
                             return (
                                 <div>
                                     <I18nProvider language={this.state.language} catalogs={this.catalogs}>
@@ -71,8 +72,7 @@ class Navigation extends React.Component {
                                 </div>
                                 
                             )
-                        }}>
-                        </Route>
+                        }}/>
 
                     </Switch>
 

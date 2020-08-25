@@ -15,11 +15,13 @@ class Split extends Component {
         this.handleRightEntered = this.handleRightEntered.bind(this)
         this.handleRightLeaved = this.handleRightLeaved.bind(this)
         this.handleLeftClicked = this.handleLeftClicked.bind(this)
+        this.loadDoc = this.loadDoc.bind(this)
     }
 
 
     //methods for left image
     handleLeftClicked() {
+        this.loadDoc()
         this.props.history.push("Doc")
         this.props.onChangeRadioButtons([false, true, false])
     }
@@ -73,11 +75,14 @@ class Split extends Component {
             return "enlarge"
         }
     }
+    loadDoc = ()=>{
+        this.props.onChangeRadioButtons([false,true,false])
+        this.props.history.push('/doc',{isAccessible:true});
+    }
 
 
 
     render() {
-
         return (
             <div className="container-images">
                 <div className={this.getLeftClassName()} style={{
