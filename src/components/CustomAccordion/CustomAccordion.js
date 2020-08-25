@@ -6,12 +6,14 @@ import {Trans} from '@lingui/macro';
 
 class CustomAccordion extends React.Component {
     render() {
+        const {selectedCountry} = this.props;
         return (
             <div className = 'left-container'>
                 <Accordion defaultActiveKey="-1">
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             1. <Trans>Accounts</Trans>
+                            2.{selectedCountry}
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="0">
                             <Card.Body>

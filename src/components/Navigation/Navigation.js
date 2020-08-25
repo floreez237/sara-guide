@@ -20,8 +20,6 @@ class Navigation extends React.Component {
 
     changeCountry = (country) => this.setState({selectedCountry: country});
 
-    changeDocAccessibility = (access) => this.setState({docAccessible: access})
-
     catalogs = {en: catalogEn, fr: catalogFr}
 
     deriveSelectedLanguage = (langCode) => {
