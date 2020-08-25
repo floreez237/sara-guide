@@ -1,0 +1,12 @@
+.images-container {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: auto;
+}
+
+.image {
+  display: inline-block;
+  vertical-align: middle;
+}
