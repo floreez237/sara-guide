@@ -1,0 +1,8 @@
+.left-container {
+  display: flex;
+  /* margin: "4px 0"; */
+  /* margin-left: 10px;
+  margin-top: 0px; */
+  /* box-sizing: border-box; */
+  position: static;
+}

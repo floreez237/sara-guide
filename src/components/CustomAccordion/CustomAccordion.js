@@ -1,13 +1,15 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
-import './style.css'
+import './style.scss'
 
 class CustomAccordion extends React.Component {
     render() {
         return (
             <div className = 'left-container' >
-                <Accordion defaultActiveKey="-1" >
+                <Accordion defaultActiveKey="-1" style = {{
+                    cursor: "pointer"
+                }}>
                     <Card >
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             1. Accounts

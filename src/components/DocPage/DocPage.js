@@ -1,4 +1,4 @@
-import './Styles.css'
+import './styles.css'
 import CustomAccordion from '../CustomAccordion/CustomAccordion'
 import React from 'react'
 import NavigationHeader from "../Header/NavigationHeader";
@@ -15,7 +15,7 @@ class DocPage extends React.Component {
                                       radioButtons={this.props.radioButtons}
                                       onChangeButtons={this.props.changeRadioButtons}/>
                 </div>
-                <div className="split-left">
+                <div className="container-left">
                     <CustomAccordion/>
                 </div>
                 <div>
