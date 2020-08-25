@@ -3,6 +3,8 @@ import CustomCarousel from '../CustomCarousol/CustomCarousel';
 import NavigationHeader from '../Header/NavigationHeader';
 import Footing from "../footer/Footer";
 import Split from "../Split/split"
+import "./MainComponent.scss"
+
 
 class MainComponent extends React.Component {
 
@@ -13,7 +15,7 @@ class MainComponent extends React.Component {
     render() {
         return (
             <div style={{backgroundColor: "white"}}>
-                <div style={{marginBottom: "9px"}}>
+                <div className="stickyTop" >
                     <NavigationHeader onChangeLanguage={this.props.onChangeLanguage}
                                       onChangeCountry={this.props.onChangeCountry}
                                       selectedLanguage={this.props.selectedLanguage}
@@ -22,7 +24,7 @@ class MainComponent extends React.Component {
                                       onChangeButtons={this.props.changeRadioButtons}
                     />
                 </div>
-                <div style={{position: "relative",}}>
+                <div>
                     <CustomCarousel/>
                 </div>
                 <div style={{backgroundColor: "#f4f4f4"}}>

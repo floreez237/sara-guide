@@ -57,14 +57,25 @@ class Navigation extends React.Component {
                         </Route>
                         <Route path='/doc' render={() => {
                             return (
-                                <I18nProvider language={this.state.language} catalogs={this.catalogs}>
+                                <div>
+                                    <I18nProvider language={this.state.language} catalogs={this.catalogs}>
                                     <DocPage onChangeLanguage={this.changeLanguage}
                                              selectedLanguage={this.deriveSelectedLanguage(this.state.language)}
                                              selectedCountry={this.state.selectedCountry}
                                              onChangeCountry={this.changeCountry}
                                              radioButtons={this.state.radioButtons}
                                              changeRadioButtons={this.changeRadioButtons}/>
+
                                 </I18nProvider>
+                                <MainComponent onChangeLanguage={this.changeLanguage}
+                                                   selectedLanguage={this.deriveSelectedLanguage(this.state.language)}
+                                                   selectedCountry={this.state.selectedCountry}
+                                                   onChangeCountry={this.changeCountry}
+                                                   radioButtons={this.state.radioButtons}
+                                                   changeRadioButtons={this.changeRadioButtons}/>
+                                
+                                </div>
+                                
                             )
                         }}/>
 

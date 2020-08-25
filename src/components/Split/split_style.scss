@@ -1,10 +1,8 @@
 * {box-sizing: border-box;}
 
 /*row1*/
-.large-effect:hover {
+.large-left:hover{
   transform: scale(1.4);
-  cursor: pointer;
-
 }
 
 .row {
@@ -41,7 +39,7 @@ img {
   text-decoration:none;
   font-size: 32px;
 }
-.column .title {
+.column .men {
   background-color: rgba(51, 51, 51, 0.7);
   padding: 4px;
   border: none;
@@ -53,7 +51,7 @@ img {
   font-weight: bold;
   text-decoration: none;
 }
-.column .title:hover {
+.column .men:hover {
   background-color: rgb(51, 51, 51);
 }
 
@@ -63,7 +61,7 @@ img {
     margin-top: 0px;
     width: 20%;
   }
-  .column .title {
+  .column .men {
     font-size: 20px;
   }
 }
@@ -89,7 +87,7 @@ img {
   .column .buy a {
     font-size: 20px;
   }
-  .column .title {
+  .column .men {
     font-size: 20px;
     padding: 3px 8px;
   }
@@ -108,7 +106,7 @@ img {
   .row {
     padding-top: 140px;
   }
-  .column .title {
+  .column .men {
     font-size: 18px;
   }
   .column .buy {
@@ -163,7 +161,7 @@ img {
   .column {
     padding-bottom:0;
   }
-  .column .title {
+  .column .men {
     font-size: 15px;
   }
   .column .buy {

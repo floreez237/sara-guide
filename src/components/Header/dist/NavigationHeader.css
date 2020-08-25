@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap");
+:root {
+  font-family: "Comfortaa", "Century Gothic", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dropdown {
+  color: black;
+  margin-top: 10px;
+}
+
+.title-item {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 43%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav {
+  display: flex;
+}
+.nav .static-item {
+  cursor: default;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin: 3px 40% 0 5px;
+  min-width: 240px;
+  min-height: 45px;
+  display: inline-block;
+}
+.nav .grow {
+  height: 60px;
+  width: 60px;
+}
+.nav .item {
+  padding: 20px 20px 0 20px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  transition: 0.3s color, 0.1s background-color;
+}
+.nav .item::after {
+  transition: 0.3s transform, 0.1s left, 0.1s right;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  border-bottom: 3px solid #d41010;
+}
+.nav .item:hover {
+  background-color: rgba(51, 53, 51, 0.15);
+}
+.nav .item:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.bar {
+  display: flex;
+  background: #333533;
+  padding: 5px;
+}
+.bar img {
+  filter: invert(100%);
+  margin: 5px;
+}
+
+input:nth-of-type(1):checked ~ .nav .item:nth-of-type(1) {
+  color: #d41010;
+}
+
+input:nth-of-type(1):checked ~ .nav .item:nth-of-type(2)::after {
+  transform: translateX(calc(-100% + -40px));
+}
+
+input:nth-of-type(1):checked ~ .nav .item:nth-of-type(3)::after {
+  transform: translateX(calc(-200% + -80px));
+}
+
+input:nth-of-type(1):checked ~ .nav .item:nth-of-type(4)::after {
+  transform: translateX(calc(-300% + -120px));
+}
+
+input:nth-of-type(1):checked ~ .nav .item:nth-of-type(5)::after {
+  transform: translateX(calc(-400% + -160px));
+}
+
+input:nth-of-type(2):checked ~ .nav .item:nth-of-type(1)::after {
+  transform: translateX(calc(100% + 40px));
+}
+
+input:nth-of-type(2):checked ~ .nav .item:nth-of-type(2) {
+  color: #d41010;
+}
+
+input:nth-of-type(2):checked ~ .nav .item:nth-of-type(3)::after {
+  transform: translateX(calc(-100% + -40px));
+}
+
+input:nth-of-type(2):checked ~ .nav .item:nth-of-type(4)::after {
+  transform: translateX(calc(-200% + -80px));
+}
+
+input:nth-of-type(2):checked ~ .nav .item:nth-of-type(5)::after {
+  transform: translateX(calc(-300% + -120px));
+}
+
+input:nth-of-type(3):checked ~ .nav .item:nth-of-type(1)::after {
+  transform: translateX(calc(200% + 80px));
+}
+
+input:nth-of-type(3):checked ~ .nav .item:nth-of-type(2)::after {
+  transform: translateX(calc(100% + 40px));
+}
+
+input:nth-of-type(3):checked ~ .nav .item:nth-of-type(3) {
+  color: #d41010;
+}
+
+input:nth-of-type(3):checked ~ .nav .item:nth-of-type(4)::after {
+  transform: translateX(calc(-100% + -40px));
+}
+
+input:nth-of-type(3):checked ~ .nav .item:nth-of-type(5)::after {
+  transform: translateX(calc(-200% + -80px));
+}
+
+input:nth-of-type(4):checked ~ .nav .item:nth-of-type(1)::after {
+  transform: translateX(calc(300% + 120px));
+}
+
+input:nth-of-type(4):checked ~ .nav .item:nth-of-type(2)::after {
+  transform: translateX(calc(200% + 80px));
+}
+
+input:nth-of-type(4):checked ~ .nav .item:nth-of-type(3)::after {
+  transform: translateX(calc(100% + 40px));
+}
+
+input:nth-of-type(4):checked ~ .nav .item:nth-of-type(4) {
+  color: #d41010;
+}
+
+input:nth-of-type(4):checked ~ .nav .item:nth-of-type(5)::after {
+  transform: translateX(calc(-100% + -40px));
+}
+
+input:nth-of-type(5):checked ~ .nav .item:nth-of-type(1)::after {
+  transform: translateX(calc(400% + 160px));
+}
+
+input:nth-of-type(5):checked ~ .nav .item:nth-of-type(2)::after {
+  transform: translateX(calc(300% + 120px));
+}
+
+input:nth-of-type(5):checked ~ .nav .item:nth-of-type(3)::after {
+  transform: translateX(calc(200% + 80px));
+}
+
+input:nth-of-type(5):checked ~ .nav .item:nth-of-type(4)::after {
+  transform: translateX(calc(100% + 40px));
+}
+
+input:nth-of-type(5):checked ~ .nav .item:nth-of-type(5) {
+  color: #d41010;
+}

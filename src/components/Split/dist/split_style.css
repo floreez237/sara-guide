@@ -1,0 +1,67 @@
+@font-face {
+  font-family: lemonada;
+  src: url("../../resources/fonts/Lemonada-VariableFont_wght.ttf");
+}
+.container-images {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  border-top-width: 20px;
+  border-top-color: grey;
+}
+
+.image {
+  width: 50%;
+  transform: scale(1);
+  transition: transform 300ms, opacity 300ms;
+  padding: 13%;
+  border-width: 0px;
+  text-align: center;
+  align-items: initial;
+}
+.image:hover {
+  cursor: pointer;
+}
+
+.left {
+  transform-origin: 0% 50%;
+}
+
+.right {
+  transform-origin: 100% 50%;
+}
+
+.enlarge:hover {
+  transform: scale(1.25);
+}
+
+.shrink {
+  transform: scale(0.75);
+}
+
+.textLeft {
+  color: #FF0000;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #3b3b3b;
+  margin-top: 10%;
+  font-size: 30px;
+  font-family: lemonada;
+}
+
+.textRight {
+  color: #FF0000;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #3b3b3b;
+  margin-top: 10%;
+  font-size: 30px;
+  font-family: lemonada;
+}
