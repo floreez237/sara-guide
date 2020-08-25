@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './split_style.scss';
 import img1 from '../../resources/Afimage.jpg';
-import { Link, withRouter } from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
 class Split extends Component {
     state = {
@@ -37,13 +37,13 @@ class Split extends Component {
     }
 
     getLeftClassByPosition() {
-        if (this.state.positionCursor == "none") {
+        if (this.state.positionCursor === "none") {
             return ""
         }
-        else if (this.state.positionCursor == "left") {
+        else if (this.state.positionCursor === "left") {
             return "enlarge"
         }
-        else if (this.state.positionCursor == "right") {
+        else if (this.state.positionCursor === "right") {
             return "shrink"
         }
     }
@@ -63,13 +63,13 @@ class Split extends Component {
     }
 
     getRightClassByPosition() {
-        if (this.state.positionCursor == "none") {
+        if (this.state.positionCursor === "none") {
             return ""
         }
-        else if (this.state.positionCursor == "left") {
+        else if (this.state.positionCursor === "left") {
             return "shrink"
         }
-        else if (this.state.positionCursor == "right") {
+        else if (this.state.positionCursor === "right") {
             return "enlarge"
         }
     }
