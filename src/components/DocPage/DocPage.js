@@ -1,8 +1,9 @@
-import './Styles.css'
+import './styles.css'
 import CustomAccordion from '../CustomAccordion/CustomAccordion'
 import React from 'react'
 import NavigationHeader from "../Header/NavigationHeader";
 import {withRouter,Redirect} from 'react-router-dom';
+import PaginationComponent from '../PaginationInnerComponent/PaginationInnerComponent'
 
 class DocPage extends React.Component {
 
@@ -14,19 +15,19 @@ class DocPage extends React.Component {
         try{
             if (this.props.location.state.isAccessible) {
                 return (
-                    <div>
-                        <div>
+                    <div >
+                        <div className="stickyTop">
                             <NavigationHeader onChangeLanguage={this.props.onChangeLanguage}
                                               onChangeCountry={this.props.onChangeCountry}
                                               selectedLanguage={this.props.selectedLanguage}
                                               selectedCountry={this.props.selectedCountry}
                                               radioButtons={this.props.radioButtons}/>
                         </div>
-                        <div className="split-left">
-                            <CustomAccordion selectedCountry={this.props.selectedCountry}/>
+                        <div className="container-left">
+                            <CustomAccordion/>
                         </div>
-                        <div>
-
+                        <div className="split-right">
+                            {/* <PaginationComponent title = "PaginationComponent" images = {[toDataURL("../../resources/images/enfants.jpg")]}/> */}
                         </div>
                     </div>);
             }else{

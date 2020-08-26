@@ -20,7 +20,7 @@ class Split extends Component {
 
     //methods for left image
     handleLeftClicked() {
-        this.props.history.push("Doc")
+        this.props.history.push("Doc", {isAccessible:true})
         this.props.onChangeRadioButtons([false, true, false])
     }
 
@@ -77,7 +77,6 @@ class Split extends Component {
 
 
     render() {
-
         return (
             <div className="container-images">
                 <div className={this.getLeftClassName()} style={{

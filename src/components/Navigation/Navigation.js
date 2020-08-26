@@ -67,13 +67,6 @@ class Navigation extends React.Component {
                                              changeRadioButtons={this.changeRadioButtons}/>
 
                                 </I18nProvider>
-                                <MainComponent onChangeLanguage={this.changeLanguage}
-                                                   selectedLanguage={this.deriveSelectedLanguage(this.state.language)}
-                                                   selectedCountry={this.state.selectedCountry}
-                                                   onChangeCountry={this.changeCountry}
-                                                   radioButtons={this.state.radioButtons}
-                                                   changeRadioButtons={this.changeRadioButtons}/>
-                                
                                 </div>
                                 
                             )
