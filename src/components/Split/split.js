@@ -52,6 +52,7 @@ class Split extends Component {
     //methods for right image
     handleRightEntered() {
         this.setState({ positionCursor: "right" })
+
     }
 
     handleRightLeaved() {
