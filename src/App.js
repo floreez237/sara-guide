@@ -9,8 +9,8 @@ import img2 from "./resources/images/enfants.jpg"
 export default class App extends React.Component {
     render() {
         return (
-            <Navigation/>
-            // <PaginationInnerComponent title = "Images Pagination" images={[img1, img2, img2]}/>
+            // <Navigation/>
+            <PaginationInnerComponent title = "Images Pagination" images={[img1]} PaginationTitleClass="headerType1"/>
         );
     }
 }

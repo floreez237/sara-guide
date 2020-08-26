@@ -15,7 +15,6 @@ class CustomAccordion extends React.Component {
                     <Card >
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             1. <Trans>Accounts</Trans>
-                            2.{selectedCountry}
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="0">
                             <Card.Body>

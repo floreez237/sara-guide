@@ -9,22 +9,16 @@ export default class PaginationInnerComponent extends React.Component {
     }
 
     getImages() {
-        // <div>
-        //     <text>
-        //     {this.props.images[0]}junior
-        //     </text>
-        // </div>
+        // const MAX_SIZE = 50
         var imagesInJsx = []
-        var imageWidth = (100 / (this.props.images.length)) - 2 * this.props.images.length - 4
+        var imageWidth = ((100 / (this.props.images.length)))
         for (let i = 0; i < this.props.images.length; i++) {
             imagesInJsx.push(
-            <div className="image">
-                <img src={this.props.images[i]} style={{
-                    maxWidth: imageWidth + "%",
-                    margin: "1%",
-                }}>
-                </img>
-            </div>)
+                <div className="col" style={{ width: imageWidth + "%"}}>
+                    <img src={this.props.images[i]} 
+                    style={{ width:"100%", objectFit: "contain" }}
+                    ></img>
+                </div>)
         }
         return imagesInJsx
     }
@@ -32,10 +26,10 @@ export default class PaginationInnerComponent extends React.Component {
     render() {
         return (
             <div>
-                <text>
-                    {this.props.title}
-                </text>
-                <div className="images-container">
+                <div className = {this.props.PaginationTitleClass==="headerType1"? "mainTitle":"subTitle"}>
+                    <text className="headerType1">{this.props.title}</text>
+                </div>
+                <div className="ro">
                     {this.props.images ? this.getImages() : null}
                 </div>
             </div>

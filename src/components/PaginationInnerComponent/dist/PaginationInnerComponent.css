@@ -1,12 +1,22 @@
-.images-container {
-  flex: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: auto;
+.col {
+  float: left;
+  padding: 5px;
 }
 
-.image {
-  display: inline-block;
-  vertical-align: middle;
+.ro::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.headerType1 {
+  font-size: 30px;
+}
+
+.mainTitle {
+  text-align: center;
+}
+
+.subTitle {
+  margin-left: 10px;
 }
