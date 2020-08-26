@@ -32,7 +32,6 @@ class MainComponent extends React.Component {
                 </div>
                 <Footing/>
             </div>
-            // <CustomAccordion/>
         )
     }
 }
