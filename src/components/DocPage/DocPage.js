@@ -1,10 +1,10 @@
-import './styles.css'
-import CustomAccordion from '../CustomAccordion/CustomAccordion'
-import React from 'react'
+import './styles.css';
+import CustomAccordion from '../CustomAccordion/CustomAccordion';
+import React from 'react';
 import NavigationHeader from "../Header/NavigationHeader";
 import {withRouter,Redirect} from 'react-router-dom';
-import PaginationComponent from '../PaginationInnerComponent/PaginationInnerComponent'
-
+import PaginationComponent from '../PaginationInnerComponent/PaginationInnerComponent';
+import TONTINE_ITEMS from './sections/Tontines/Tontines';
 class DocPage extends React.Component {
 
     componentDidMount() {
@@ -27,7 +27,8 @@ class DocPage extends React.Component {
                             <CustomAccordion/>
                         </div>
                         <div className="split-right">
-                            {/* <PaginationComponent title = "PaginationComponent" images = {[toDataURL("../../resources/images/enfants.jpg")]}/> */}
+                             <PaginationComponent title = "PaginationComponent" images = {[TONTINE_ITEMS[0].image]} description="dfdfjkjdsksdkjsdkjdasnsadokdjfoadijf"
+                             titleClass="headerType2"/>
                         </div>
                     </div>);
             }else{
