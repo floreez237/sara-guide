@@ -27,7 +27,7 @@ class DocPage extends React.Component {
                             <CustomAccordion/>
                         </div>
                         <div className="split-right">
-                             <PaginationComponent title = "PaginationComponent" images = {[TONTINE_ITEMS[0].image]} description="dfdfjkjdsksdkjsdkjdasnsadokdjfoadijf"
+                             <PaginationComponent title = "PaginationComponent" images = {TONTINE_ITEMS[0].image} description="dfdfjkjdsksdkjsdkjdasnsadokdjfoadijf"
                              titleClass="headerType2"/>
                         </div>
                     </div>);
