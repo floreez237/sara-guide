@@ -38,6 +38,15 @@ class DocPage extends React.Component {
             case ("AccountManagement") : {
                 return <PaginationComponent description = {ACCOUNTS_MANAGEMENT[0].description} images = {ACCOUNTS_MANAGEMENT[0].image} title = {ACCOUNTS_MANAGEMENT[0].title}/>
             }
+            case ("EditUserDetails") : {
+                return <PaginationComponent description = {ACCOUNTS_MANAGEMENT[1].description} images = {ACCOUNTS_MANAGEMENT[1].image} title = {ACCOUNTS_MANAGEMENT[1].title}/>
+            }
+            case ("ChangePIN") : {
+                return <PaginationComponent description = {ACCOUNTS_MANAGEMENT[2].description} images = {ACCOUNTS_MANAGEMENT[2].image} title = {ACCOUNTS_MANAGEMENT[2].title}/>
+            }
+            case ("AddAddress") : {
+                return <PaginationComponent description = {ACCOUNTS_MANAGEMENT[3].description} images = {ACCOUNTS_MANAGEMENT[3].image} title = {ACCOUNTS_MANAGEMENT[3].title}/>
+            }
             case ("BankAccount") : {
                 return <PaginationComponent description = {BANK_ACCOUNTS[0].description} images = {BANK_ACCOUNTS[0].image} title = {BANK_ACCOUNTS[0].title}/>
             }

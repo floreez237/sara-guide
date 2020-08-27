@@ -9,7 +9,7 @@ export default class PaginationInnerComponent extends React.Component {
     }
 
     getImages() {
-        const MAX_WIDTH = 20
+        const MAX_WIDTH = 30
         const largeContainerWidth = 100 * (this.props.images.length)
         var imageWidth = (largeContainerWidth/100)*MAX_WIDTH
         if(imageWidth > 100){

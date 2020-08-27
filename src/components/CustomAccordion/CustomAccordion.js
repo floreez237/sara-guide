@@ -36,10 +36,22 @@ class CustomAccordion extends React.Component {
         this.goToTontineHistory = this.goToTontineHistory.bind(this)
         this.goToPendingApproval = this.goToPendingApproval.bind(this)
         this.goToPendingHistory = this.goToPendingHistory.bind(this)
+        this.goToEditUserDetails = this.goToEditUserDetails.bind(this)
+        this.goToChangePIN = this.goToChangePIN.bind(this)
+        this.goToAddAddress = this.goToAddAddress.bind(this)
     }
 //goToTopUp
     goToAccountManagement(){
         this.props.changeSection("AccountManagement")
+    }
+    goToEditUserDetails(){
+        this.props.changeSection("EditUserDetails")
+    }
+    goToChangePIN(){
+        this.props.changeSection("ChangePIN")
+    }
+    goToAddAddress(){
+        this.props.changeSection("AddAddress")
     }
     goToBankAccount(){
         this.props.changeSection("BankAccount")
@@ -141,16 +153,16 @@ class CustomAccordion extends React.Component {
                                             a. <Trans>Account Management</Trans>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1" >
-                                            <Card.Body style ={{margin : "0 auto"}}>
+                                            <Card.Body style ={{margin : "0 auto"}} onClick = {this.goToEditUserDetails}>
                                                 i. <Trans>Edit user details</Trans>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                         <Accordion.Collapse eventKey="1">
-                                            <Card.Body>
+                                            <Card.Body onClick = {this.goToChangePIN}>
                                                 ii. <Trans>Change PIN</Trans>
                                             </Card.Body>
                                         </Accordion.Collapse>
-                                        <Accordion.Collapse eventKey="1">
+                                        <Accordion.Collapse eventKey="1" onClick = {this.goToAddAddress}>
                                             <Card.Body>
                                                 iii. <Trans>Add address</Trans>
                                             </Card.Body>
