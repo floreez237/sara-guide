@@ -21,6 +21,7 @@ import TONTINE_ITEMS from "./sections/Tontines/Tontines"
 import ROB_TONTINE_ITEMS from "./sections/Tontines/robs tontine/RobTontine"
 import AFB_ACCOUNT_ITEMS from "./sections/fund transfer/AFB account/afb_account"
 import SERVICE_PAYMENTS_ITEMS from "./sections/service payment/ServicePayment"
+import EXCHANGE_RATE from './sections/product and service/service/exchange_rates/exchange_rates'
 
 
 class DocPage extends React.Component {
@@ -134,22 +135,23 @@ class DocPage extends React.Component {
             case("Service") : {
                 return <PaginationComponent description = {SERVICE[0].description} images = {SERVICE[0].image} title = {SERVICE[0].title}/>
             }
-            // case("ExchangeRate") : {
-                
-            // }
+            
+            case("ExchangeRate") : {
+                return <PaginationComponent description = {EXCHANGE_RATE[0].description} images = {EXCHANGE_RATE[0].image} title = {EXCHANGE_RATE[0].title}/>
+            }
 
             //TopUp
             case("TopUp") : {
                 return <PaginationComponent description = {TOPUP[0].description} images = {TOPUP[0].image} title = {TOPUP[0].title}/>
             }
-            // case("AirTime") : {
-            //     // return <PaginationComponent description = {AIR_TIME_ITEMS[0].description} images = {AIR_TIME_ITEMS[0].image} title = {AIR_TIME_ITEMS[0].title}/>
-            // }
-            case("AirTimeMyNumber") : {
+            case("AirTime") : {
                 return <PaginationComponent description = {AIR_TIME_ITEMS[0].description} images = {AIR_TIME_ITEMS[0].image} title = {AIR_TIME_ITEMS[0].title}/>
             }
-            case("AirTimeOtherNumber") : {
+            case("AirTimeMyNumber") : {
                 return <PaginationComponent description = {AIR_TIME_ITEMS[1].description} images = {AIR_TIME_ITEMS[1].image} title = {AIR_TIME_ITEMS[1].title}/>
+            }
+            case("AirTimeOtherNumber") : {
+                return <PaginationComponent description = {AIR_TIME_ITEMS[2].description} images = {AIR_TIME_ITEMS[2].image} title = {AIR_TIME_ITEMS[2].title}/>
             }
             // case("Data") : {
             //     // return <PaginationComponent description = {SERVICE[0].description} images = {SERVICE[0].image} title = {SERVICE[0].title}/>
