@@ -7,12 +7,12 @@ const AIRTIME_ITEMS=[
     {
         title:<Trans>Airtime to me </Trans>,
         image:[airTimeToMe],
-        descriprion:<Trans> </Trans>
+        description:<Trans> </Trans>
     },
     {
         title: <Trans>Airtime to someone</Trans>,
         image:[airTimeToSomeone],
-        descriprion: <Trans> </Trans>
+        description: <Trans> </Trans>
     }
 ]
 
