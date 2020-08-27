@@ -9,7 +9,7 @@ export default class PaginationInnerComponent extends React.Component {
     }
 
     getImages() {
-        const MAX_WIDTH = 30
+        const MAX_WIDTH = 20
         const largeContainerWidth = 100 * (this.props.images.length)
         var imageWidth = (largeContainerWidth/100)*MAX_WIDTH
         if(imageWidth > 100){
@@ -32,10 +32,10 @@ export default class PaginationInnerComponent extends React.Component {
     render() {
         return (
             <div>
-                <div className={this.props.PaginationTitleClass === "headerType1" ? "mainTitle" : "subTitle"}>
-                    <text className="headerType1">{this.props.title}</text>
+                <div className={this.props.PaginationTitleClass? this.props.PaginationTitleClass === "headerType1" ? "mainTitle" : "subTitle" : "mainTitle"}>
+                    <text className={this.props.PaginationTitleClass?this.props.PaginationTitleClass : "headerType1"}>{this.props.title}</text>
                 </div>
-                <div className="cen">
+                <div className="cen" >
                     <div className="ro">
                         {this.props.images ? this.getImages() : null}
                     </div>

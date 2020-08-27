@@ -5,6 +5,32 @@ import './style.scss'
 import {Trans} from '@lingui/macro';
 
 class CustomAccordion extends React.Component {
+
+    constructor(props){
+        super(props)
+        this.goToAccountManagement = this.goToAccountManagement.bind(this)
+        this.goToBankAccount = this.goToBankAccount.bind(this)
+        this.goToMyBankAccount = this.goToMyBankAccount.bind(this)
+        this.goToBeneficiaryAccounts = this.goToBeneficiaryAccounts.bind(this)
+        this.goToAccounts = this.goToAccounts.bind(this)
+    }
+
+    goToAccountManagement(){
+        this.props.changeSection("AccountManagement")
+    }
+    goToBankAccount(){
+        this.props.changeSection("BankAccount")
+    }
+    goToMyBankAccount(){
+        this.props.changeSection("MyBankAccount")
+    }
+    goToBeneficiaryAccounts(){
+        this.props.changeSection("BeneficiaryAccounts")
+    }
+    goToAccounts(){
+        this.props.changeSection("Accounts")
+    }
+
     render() {
         return (
             <div className = 'left-container' >
@@ -12,14 +38,14 @@ class CustomAccordion extends React.Component {
                     cursor: "pointer"
                 }}>
                     <Card >
-                        <Accordion.Toggle as={Card.Header} eventKey="0">
+                        <Accordion.Toggle as={Card.Header} eventKey="0" onClick = {this.goToAccounts}>
                             1. <Trans>Accounts</Trans>
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="0">
                             <Card.Body>
                                 <Accordion defaultActiveKey="0">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="1">
+                                        <Accordion.Toggle as={Card.Header} eventKey="1" onClick = {this.goToAccountManagement}>
                                             A. Account Management
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1" >
@@ -41,15 +67,15 @@ class CustomAccordion extends React.Component {
                                 </Accordion>
                                 <Accordion defaultActiveKey="0">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="1">
+                                        <Accordion.Toggle as={Card.Header} eventKey="1" onClick = {this.goToBankAccount}>
                                             B. Bank Account
                                         </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="1">
+                                        <Accordion.Collapse eventKey="1" onClick = {this.goToMyBankAccount}>
                                             <Card.Body>
                                                 a. My Bank Account
                                             </Card.Body>
                                         </Accordion.Collapse>
-                                        <Accordion.Collapse eventKey="1">
+                                        <Accordion.Collapse eventKey="1" onClick = {this.goToBeneficiaryAccounts}>
                                             <Card.Body>
                                                 b. Beneficiary Accounts
                                             </Card.Body>
