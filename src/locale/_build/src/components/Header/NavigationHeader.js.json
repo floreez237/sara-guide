@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        14
+        11
       ]
     ]
   },
@@ -11,7 +11,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        15
+        12
       ]
     ]
   },
@@ -19,7 +19,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        16
+        13
       ]
     ]
   },
@@ -27,7 +27,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        17
+        14
       ]
     ]
   },
@@ -35,7 +35,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        18
+        15
       ]
     ]
   },
@@ -43,7 +43,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        20
+        17
       ]
     ]
   },
@@ -51,7 +51,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        21
+        18
       ]
     ]
   },
@@ -59,7 +59,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        59
+        79
       ]
     ]
   },
@@ -67,7 +67,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        60
+        80
       ]
     ]
   },
@@ -75,7 +75,7 @@
     "origin": [
       [
         "src/components/Header/NavigationHeader.js",
-        61
+        81
       ]
     ]
   }
