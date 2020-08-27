@@ -4,7 +4,7 @@ import cashIn from './cash_in.jpg'
 import {Trans} from "@lingui/macro";
 import React from "react";
 
-export const CASH_IN_ITEMS=[
+const CASH_IN_ITEMS=[
     {
         title:<Trans>Cash In</Trans>,
         image:[home,cashIn],
@@ -16,3 +16,5 @@ export const CASH_IN_ITEMS=[
         description: <Trans> </Trans>
     }
 ]
+
+export default CASH_IN_ITEMS

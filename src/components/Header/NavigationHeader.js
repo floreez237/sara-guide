@@ -69,7 +69,7 @@ class NavigationHeader extends React.Component {
             </NavDropdown.Item>
         ));
         return (
-            <div style={{backgroundColor:"white", paddingBottom:"7px"}}>
+            <div style={{backgroundColor:"#f7f7f7", paddingBottom:"7px"}}>
                 <input className="invisible" type="radio" name="tab" id="1" checked={this.props.radioButtons[0]}/>
                 <input className="invisible" type="radio" name="tab" id="2" checked={this.props.radioButtons[1]}/>
                 <input className="invisible" type="radio" name="tab" id="3" checked={this.props.radioButtons[2]}/>
