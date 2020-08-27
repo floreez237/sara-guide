@@ -3,7 +3,9 @@ import CustomAccordion from '../CustomAccordion/CustomAccordion'
 import React from 'react'
 import NavigationHeader from "../Header/NavigationHeader";
 import {withRouter,Redirect} from 'react-router-dom';
-import PaginationComponent from '../PaginationInnerComponent/PaginationInnerComponent'
+import PaginationComponent from '../PaginationInnerComponent/PaginationInnerComponent';
+import CASH_OUT_ITEMS from './sections/cash out/CashOut';
+
 
 class DocPage extends React.Component {
 
@@ -27,7 +29,7 @@ class DocPage extends React.Component {
                             <CustomAccordion/>
                         </div>
                         <div className="split-right">
-                            {/* <PaginationComponent title = "PaginationComponent" images = {[toDataURL("../../resources/images/enfants.jpg")]}/> */}
+                             <PaginationComponent title ={CASH_OUT_ITEMS[0].title} images = {CASH_OUT_ITEMS[0].image}/>
                         </div>
                     </div>);
             }else{

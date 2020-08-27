@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+:root{
+    --url: url("../../resources/Afimage.jpg");
+}
+
+html{
+    background:var(--url);
+    //background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+    background-size: cover;
+    height:100%;
+}
+
+#feedback-page{
+    text-align:center;
+}
+
+#form-main{
+    width:100%;
+    float:left;
+    padding-top:0;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding: 35px 35px 50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-top:30px;
+    margin-left: -260px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color:#3c3c3c;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+    background: #FFFFFF;
+    /*box-shadow: 0;*/
+    border: 3px solid #e60613;
+    color: #e60613;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused{
+    color:#e60613;
+    border:#e60613 solid 3px;
+}
+
+
+#email{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus{
+
+    //background-size: 30px 30px;
+    //width: 100%;
+    //background-position: 11px 8px;
+    //background-repeat: no-repeat;
+}
+
+#comment{
+    //background-size: 30px 30px;
+    //background-position: 11px 8px;
+    //background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+#button-blue{
+    float:left;
+    width: 100%;
+    border: transparent;
+    cursor:pointer;
+   // background-color: #e60613;
+    color:gray;
+    font-size:17px;
+    padding-top:22px;
+    padding-bottom:22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+#button-blue:hover{
+    //background-color: rgba(0,0,0,0);
+    color: #e60613;
+}
+
+.submit:hover {
+    color:#e60613;
+}
+
+.ease {
+    width: 0;
+    height: 40px;
+    background-color: #656161;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease{
+    width:100%;
+    background-color: #d0d0d0;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div{
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
