@@ -23,11 +23,11 @@ class Footing extends Component {
                       paddingBottom: "30px", 
                       paddingTop: "10px" }}>
                     <div style={{ marginTop: "10px", marginBottom: "10px" }}>
-                        <h1 className="header h1"><Trans>About Us</Trans> </h1>
+                        <h1 className="header vh1"><Trans>About Us</Trans> </h1>
                     </div>
 
                     <p className="text">
-                        {/* <Trans id="about.text"> */}
+                         <Trans id="about.text">
                             Learn all about our history, our vision, our strategy to become the
                             african
                             bank of
@@ -40,7 +40,7 @@ class Footing extends Component {
                             Obtain information on corporate governance, our network, our relationships
                             with
                             investors.
-                            {/* </Trans> */}
+                             </Trans>
                     </p>
                     <center>
                         {/* <a className="h1" href="https://www.afrilandfirstbank.com " style={{ textAlign: "center" }}> */}
