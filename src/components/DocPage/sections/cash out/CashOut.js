@@ -1,4 +1,4 @@
-import {Trans} from "@lingui/macro";
+ import {Trans} from "@lingui/macro";
 import cashOut from './cash_out.jpg'
 import cashOutToAfb from './cash_out_to_afb.jpg'
 import home from './../home.jpg'
