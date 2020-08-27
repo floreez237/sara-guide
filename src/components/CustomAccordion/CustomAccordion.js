@@ -44,7 +44,7 @@ class CustomAccordion extends React.Component {
         this.goToServicePayment = this.goToServicePayment.bind(this)
         this.goToPartnerTypes = this.goToPartnerTypes.bind(this)
         this.goToPartners = this.goToPartners.bind(this)
-        this.goToPaymentProcedure = this.goToPaymentProcedure(this)
+        this.goToPaymentProcedure = this.goToPaymentProcedure.bind(this)
     }
 //Account
     goToAccountManagement(){
@@ -169,6 +169,9 @@ class CustomAccordion extends React.Component {
     goToPendingHistory(){
         this.props.changeSection("PendingHistory")
     }
+    // goToTopUp(){
+    //     this.
+    // }
 
     render() {
         return (
@@ -361,7 +364,7 @@ class CustomAccordion extends React.Component {
 
                     </Card>
                     <Card>
-                        <Accordion.Toggle as={Card.Header} eventKey="22">
+                        <Accordion.Toggle as={Card.Header} eventKey="22" onClick = {this.goToTopUp}>
                             7. Top Up
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey="22">

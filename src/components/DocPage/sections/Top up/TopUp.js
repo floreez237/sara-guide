@@ -9,7 +9,6 @@ const TOP_UP_ITEMS=[
         image:[home,topUpHome],
         description:<Trans> </Trans>
     }
-
 ]
 
 export default TOP_UP_ITEMS
