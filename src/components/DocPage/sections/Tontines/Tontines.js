@@ -11,7 +11,7 @@ const TONTINE_ITEMS=[
         description:<Trans></Trans>,
     },
     {
-        title: <Trans>"Robes Tontines"</Trans>,
+        title: <Trans>Robes Tontines</Trans>,
         image: [RobTontine],
         description: <Trans></Trans>,
     }

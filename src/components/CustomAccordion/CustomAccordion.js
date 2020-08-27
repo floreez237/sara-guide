@@ -45,6 +45,8 @@ class CustomAccordion extends React.Component {
         this.goToPartnerTypes = this.goToPartnerTypes.bind(this)
         this.goToPartners = this.goToPartners.bind(this)
         this.goToPaymentProcedure = this.goToPaymentProcedure.bind(this)
+        this.goToAirTime = this.goToAirTime.bind(this)
+        this.goToExchangeRate = this.goToExchangeRate.bind(this)
     }
 //Account
     goToAccountManagement(){
@@ -136,12 +138,20 @@ class CustomAccordion extends React.Component {
     goToService(){
         this.props.changeSection("Service")
     }
+    goToExchangeRate(){
+        this.props.changeSection("ExchangeRate")
+    }
     goToTopUp(){
         this.props.changeSection("TopUp")
     }
     goToService(){
         this.props.changeSection("Service")
     }
+
+    goToAirTime(){
+        this.props.changeSection("AirTime")
+    }
+
     goToAirTimeMyNumber(){
         this.props.changeSection("AirTimeMyNumber")
     }
@@ -353,7 +363,7 @@ class CustomAccordion extends React.Component {
                                             b. Service
                                     </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="21">
-                                            <Card.Body>
+                                            <Card.Body onClick = {this.goToExchangeRate}>
                                                 i. <Trans>Exchange rates</Trans>
                                         </Card.Body>
                                         </Accordion.Collapse>
@@ -371,7 +381,7 @@ class CustomAccordion extends React.Component {
                             <Card.Body>
                                 <Accordion defaultActiveKey="0">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="22" >
+                                        <Accordion.Toggle as={Card.Header} eventKey="22" onClick = {this.goToAirTime} >
                                             a. <Trans>Airtime</Trans>
                                     </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="22">
