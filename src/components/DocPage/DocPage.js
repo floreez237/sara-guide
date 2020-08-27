@@ -15,8 +15,8 @@ import FUND_TRANSFER_ITEMS from './sections/fund transfer/fund_transfer'
 import PRODUCT_AND_SERVICE_ITEMS from './sections/product and service/product_and_service'
 import PRODUCT from './sections/product and service/product/product'
 import SERVICE from './sections/product and service/service/service'
-import TOPUP from './sections/top up/TopUp'
-import AIR_TIME_ITEMS from './sections/top up/Airtime/Airtime'
+import TOPUP from './sections/Top up/TopUp'
+import AIR_TIME_ITEMS from './sections/Top up/Airtime/Airtime'
 import TONTINE_ITEMS from "./sections/Tontines/Tontines"
 import ROB_TONTINE_ITEMS from "./sections/Tontines/robs tontine/RobTontine"
 
