@@ -1,0 +1,82 @@
+{
+  "Cameroon": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        14
+      ]
+    ]
+  },
+  "Ivory Coast": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        15
+      ]
+    ]
+  },
+  "Liberia": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        16
+      ]
+    ]
+  },
+  "Guinea": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        17
+      ]
+    ]
+  },
+  "Congo": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        18
+      ]
+    ]
+  },
+  "English": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        20
+      ]
+    ]
+  },
+  "French": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        21
+      ]
+    ]
+  },
+  "Home": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        59
+      ]
+    ]
+  },
+  "Doc": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        60
+      ]
+    ]
+  },
+  "Contact": {
+    "origin": [
+      [
+        "src/components/Header/NavigationHeader.js",
+        61
+      ]
+    ]
+  }
+}

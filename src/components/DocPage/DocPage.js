@@ -10,6 +10,9 @@ import ACCOUNTS_MANAGEMENT from "./sections/accounts/AccountManagement"
 import BANK_ACCOUNTS from "./sections/accounts/BankAccounts"
 import MY_BANK_ACCOUNT from "./sections/accounts/bank account/MyBankAccounts"
 import BENEFICIARY_ACCOUNTS from "./sections/accounts/bank account/BeneficiaryAccounts"
+import PaginationComponent from '../PaginationInnerComponent/PaginationInnerComponent';
+import CASH_OUT_ITEMS from './sections/cash out/CashOut';
+
 
 class DocPage extends React.Component {
 

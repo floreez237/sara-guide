@@ -23,7 +23,7 @@ export default class PaginationInnerComponent extends React.Component {
                 <div className="col">
                     <img src={this.props.images[i]}
                         style={{  width:imageWidth  + "%"  }}
-                    ></img>
+                    />
                 </div>)
         }
         return imagesInJsx

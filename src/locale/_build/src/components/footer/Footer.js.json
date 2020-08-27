@@ -1,0 +1,36 @@
+{
+  "About Us": {
+    "origin": [
+      [
+        "src/components/footer/Footer.js",
+        20
+      ]
+    ]
+  },
+  "about.text": {
+    "defaults": "Learn all about our history, our vision, our strategy to become the african bank of the 3rd millennium. So far, the bank counts about forty (40) branches in the ten (10) <0/>regions of Cameroon despite the country’s unfavourable economic situation and the general tendency of banks going bankrupt.<1/>Obtain information on corporate governance, our network, our relationships with investors.",
+    "origin": [
+      [
+        "src/components/footer/Footer.js",
+        21
+      ]
+    ]
+  },
+  "Learn More": {
+    "origin": [
+      [
+        "src/components/footer/Footer.js",
+        37
+      ]
+    ]
+  },
+  "rights": {
+    "defaults": "All rights reserved",
+    "origin": [
+      [
+        "src/components/footer/Footer.js",
+        60
+      ]
+    ]
+  }
+}
