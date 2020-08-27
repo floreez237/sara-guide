@@ -3,7 +3,7 @@ import airTimeToSomeone from './air_time_to_someone.jpg'
 import {Trans} from "@lingui/macro";
 import React from "react";
 
-export const AIRTIME_ITEMS=[
+const AIRTIME_ITEMS=[
     {
         title:<Trans>Airtime to me </Trans>,
         image:[airTimeToMe],
@@ -15,3 +15,5 @@ export const AIRTIME_ITEMS=[
         descriprion: <Trans> </Trans>
     }
 ]
+
+export default AIRTIME_ITEMS

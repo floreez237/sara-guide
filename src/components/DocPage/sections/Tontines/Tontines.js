@@ -6,12 +6,12 @@ import home from './../home.jpg';
 
 const TONTINE_ITEMS=[
     {
-        title: <Trans>Tontine Dashboard</Trans>,
+        title: <Trans>Tontine</Trans>,
         image: [home, TontineHome],
         description:<Trans></Trans>,
     },
     {
-        title: <Trans>Robes Tontines</Trans>,
+        title: <Trans>Robs Tontines</Trans>,
         image: [RobTontine],
         description: <Trans></Trans>,
     }

@@ -6,7 +6,7 @@ import React from "react";
 
  const CASH_OUT_ITEMS=[
     {
-        title:<Trans>Top Up</Trans>,
+        title:<Trans>Cash Out</Trans>,
         image:[home,cashOut],
         description:<Trans> </Trans>
     },
