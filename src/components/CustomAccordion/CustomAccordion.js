@@ -256,6 +256,23 @@ class CustomAccordion extends React.Component {
                         <Accordion.Toggle as={Card.Header} eventKey="4">
                             5. <Trans>Service Payment</Trans>
                         </Accordion.Toggle>
+                        <Accordion.Collapse eventKey={"4"}>
+                            <Card.Body>
+                                <Accordion>
+                                    <Card>
+                                        <Accordion.Toggle as={Card.Header} eventKey="4">
+                                            a. <Trans>Partner Types</Trans>
+                                        </Accordion.Toggle>
+                                        <Accordion.Collapse eventKey="4">
+                                            <Card.Body>
+                                                i. <Trans>Partners</Trans>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </Card.Body>
+
+                        </Accordion.Collapse>
                     </Card>
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="21" onClick = {this.goToProductNService}>
