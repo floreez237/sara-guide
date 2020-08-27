@@ -10,7 +10,8 @@ import Navigation from "./components/Navigation/Navigation";
 export default class App extends React.Component {
     render() {
         return (
-             <Navigation/>
+            //<ContactForm/>
+            <Navigation/>
             // <Pagination/>
         );
     }
