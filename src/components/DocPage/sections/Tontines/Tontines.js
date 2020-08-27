@@ -1,6 +1,20 @@
+import {Trans} from '@lingui/macro';
 import React from 'react';
-import Section from './.';
+import TontineHome from './tontines_home.jpg';
+import RobTontine from './rob_tontines.jpg';
+import home from './../home.jpg';
 
-export default class TontineMain extends React.Component{
+const TONTINE_ITEMS=[
+    {
+        title: <Trans>Tontine Dashboard</Trans>,
+        image: [home, TontineHome],
+        description:<Trans></Trans>,
+    },
+    {
+        title: <Trans>Robes Tontines</Trans>,
+        image: [RobTontine],
+        description: <Trans></Trans>,
+    }
+];
 
-}
+export default TONTINE_ITEMS;

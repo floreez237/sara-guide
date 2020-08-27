@@ -23,7 +23,7 @@ export default class PaginationInnerComponent extends React.Component {
                 <div className="col">
                     <img src={this.props.images[i]}
                         style={{  width:imageWidth  + "%"  }}
-                    ></img>
+                    />
                 </div>)
         }
         return imagesInJsx
@@ -32,8 +32,8 @@ export default class PaginationInnerComponent extends React.Component {
     render() {
         return (
             <div>
-                <div className={this.props.PaginationTitleClass === "headerType1" ? "mainTitle" : "subTitle"}>
-                    <text className="headerType1">{this.props.title}</text>
+                <div className={this.props.titleClass === "headerType1" ? "mainTitle" : "subTitle"}>
+                    <text className={this.props.titleClass}>{this.props.title}</text>
                 </div>
                 <div className="cen">
                     <div className="ro">
