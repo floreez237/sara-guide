@@ -17,13 +17,8 @@ const SERVICE_PAYMENTS_ITEMS=[
         description: <Trans></Trans>
     },
     {
-        title: <Trans>Confirm Payment</Trans>,
-        image:[confirm],
-        description:<Trans></Trans>
-    },
-    {
-        title: <Trans>Find Bill</Trans>,
-        image:[findBill],
+        title: <Trans>Partner Types</Trans>,
+        image:[partners],
         description:<Trans></Trans>
     },
     {
@@ -31,14 +26,15 @@ const SERVICE_PAYMENTS_ITEMS=[
         image:[partners],
         description:<Trans></Trans>
     },
+
     {
-        title: <Trans>Pay Bill</Trans>,
-        image:[paybill],
+        title: <Trans>Payment</Trans>,
+        image:[paymentCanal,findBill,searchingBill,paybill,confirm],
         description:<Trans></Trans>
-    },
+    },/*
     {
-        title: <Trans>Pay Canal Bill</Trans>,
-        image:[paymentCanal],
+        title: <Trans>Find Bill</Trans>,
+        image:[findBill],
         description:<Trans></Trans>
     },
     {
@@ -47,10 +43,17 @@ const SERVICE_PAYMENTS_ITEMS=[
         description:<Trans></Trans>
     },
     {
-        title: <Trans>Partner Types</Trans>,
-        image:[partners],
+        title: <Trans>Pay Bill</Trans>,
+        image:[paybill],
         description:<Trans></Trans>
     },
+
+    {
+        title: <Trans>Confirm Payment</Trans>,
+        image:[confirm],
+        description:<Trans></Trans>
+    },*/
+
 
 
 
