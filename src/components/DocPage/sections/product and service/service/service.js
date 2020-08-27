@@ -6,14 +6,9 @@ import {Trans} from '@lingui/macro';
 const SERVICE_ITEMS = [
     {
         title:<Trans>Service</Trans>,
-        image:[service],
+        image:[service,exchange_rates],
         description:<Trans>fyjk;glifktfy</Trans>
     },
-    {
-        title:<Trans> Exchange Rate</Trans>,
-        image:[exchange_rates],
-        description:<Trans>fyjk;glifktfy</Trans>
-    }
 ];
 
 export default SERVICE_ITEMS;
