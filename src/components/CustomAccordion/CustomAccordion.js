@@ -41,6 +41,10 @@ class CustomAccordion extends React.Component {
         this.goToAddAddress = this.goToAddAddress.bind(this)
         this.goToToChooseFromBeneficiary = this.goToToChooseFromBeneficiary.bind(this)
         this.goToEnterBeneficiaryAccount = this.goToEnterBeneficiaryAccount.bind(this)
+        this.goToServicePayment = this.goToServicePayment.bind(this)
+        this.goToPartnerTypes = this.goToPartnerTypes.bind(this)
+        this.goToPartners = this.goToPartners.bind(this)
+        this.goToPaymentProcedure = this.goToPaymentProcedure(this)
     }
 //Account
     goToAccountManagement(){
@@ -107,6 +111,22 @@ class CustomAccordion extends React.Component {
     goToViaQRCode(){
         this.props.changeSection("ViaQRCode")
     }
+
+    //Service Payment
+    goToServicePayment(){
+        this.props.changeSection("ServicePayment")
+    }
+    goToPartnerTypes(){
+        this.props.changeSection("PartnerTypes")
+    }
+    goToPartners(){
+        this.props.changeSection("Partners")
+    }
+    goToPaymentProcedure(){
+        this.props.changeSection("PaymentProcedure")
+    }
+
+    //Product and Services
     goToProductNService(){
         this.props.changeSection("ProductNService")
     }
@@ -268,7 +288,7 @@ class CustomAccordion extends React.Component {
                         </Accordion.Collapse>
                     </Card>
                     <Card>
-                        <Accordion.Toggle as={Card.Header} eventKey="4">
+                        <Accordion.Toggle as={Card.Header} eventKey="4" onClick = {this.goToServicePayment}>
                             5. <Trans>Service Payment</Trans>
                         </Accordion.Toggle>
                         <Accordion.Collapse eventKey={"4"}>
@@ -276,12 +296,23 @@ class CustomAccordion extends React.Component {
                                 <Accordion>
                                     
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="4">
-                                            a. <Trans>Partner Types</Trans>
+                                        <Accordion.Toggle as={Card.Header} eventKey="4" onClick = {this.goToPartnerTypes}>
+                                            a. <Trans>Partners</Trans>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="4">
                                             <Card.Body>
-                                                i. <Trans>Partners</Trans>
+                                            <Accordion>
+                                                <Card>
+                                                    <Accordion.Toggle as={Card.Header} eventKey="4" onClick = {this.goToPartners}>
+                                                    i. <Trans>Payment Canal</Trans>
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey = "4">
+                                                    <Card.Body onClick = {this.goToPaymentProcedure}>
+                                                      <Trans>Payment Procedure</Trans>
+                                                    </Card.Body>
+                                                </Accordion.Collapse>
+                                                </Card>
+                                                </Accordion>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>

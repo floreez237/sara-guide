@@ -17,19 +17,19 @@ const SERVICE_PAYMENTS_ITEMS=[
         description: <Trans></Trans>
     },
     {
-        title: <Trans>Partner Types</Trans>,
-        image:[partners],
-        description:<Trans></Trans>
-    },
-    {
         title: <Trans>Partners</Trans>,
         image:[partners],
         description:<Trans></Trans>
     },
+    {
+        title: <Trans>Payment Canal</Trans>,
+        image:[paymentCanal],
+        description:<Trans></Trans>
+    },
 
     {
-        title: <Trans>Payment</Trans>,
-        image:[paymentCanal,findBill,searchingBill,paybill,confirm],
+        title: <Trans>Payment Procedure</Trans>,
+        image:[findBill,searchingBill,paybill,confirm],
         description:<Trans></Trans>
     },/*
     {
@@ -56,6 +56,6 @@ const SERVICE_PAYMENTS_ITEMS=[
 
 
 
-
-
 ]
+
+export default SERVICE_PAYMENTS_ITEMS

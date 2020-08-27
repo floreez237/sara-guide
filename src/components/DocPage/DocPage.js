@@ -20,6 +20,7 @@ import AIR_TIME_ITEMS from './sections/Top up/Airtime/Airtime'
 import TONTINE_ITEMS from "./sections/Tontines/Tontines"
 import ROB_TONTINE_ITEMS from "./sections/Tontines/robs tontine/RobTontine"
 import AFB_ACCOUNT_ITEMS from "./sections/fund transfer/AFB account/afb_account"
+import SERVICE_PAYMENTS_ITEMS from "./sections/service payment/ServicePayment"
 
 
 class DocPage extends React.Component {
@@ -100,9 +101,21 @@ class DocPage extends React.Component {
             }
 
             //ServicePayment
-            // case("ServicePayment") : {
+            case("ServicePayment") : {
+                return <PaginationComponent description = {SERVICE_PAYMENTS_ITEMS[0].description} images = {SERVICE_PAYMENTS_ITEMS[0].image} title = {SERVICE_PAYMENTS_ITEMS[0].title}/>
+            }
 
-            // }
+            case("PartnerTypes") : {
+                return <PaginationComponent description = {SERVICE_PAYMENTS_ITEMS[1].description} images = {SERVICE_PAYMENTS_ITEMS[1].image} title = {SERVICE_PAYMENTS_ITEMS[1].title}/>
+            }
+
+            case("Partners") : {
+                return <PaginationComponent description = {SERVICE_PAYMENTS_ITEMS[2].description} images = {SERVICE_PAYMENTS_ITEMS[2].image} title = {SERVICE_PAYMENTS_ITEMS[2].title}/>
+            }
+            
+            case("PaymentProcedure") : {
+                return <PaginationComponent description = {SERVICE_PAYMENTS_ITEMS[3].description} images = {SERVICE_PAYMENTS_ITEMS[3].image} title = {SERVICE_PAYMENTS_ITEMS[3].title}/>
+            }
 
             //Product and service
             case("ProductNService") : {
