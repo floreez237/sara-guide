@@ -1,12 +1,11 @@
 import React from 'react';
-import exchange_rates from './exchange_rates.jpg';
 import service from './service.jpg';
 import {Trans} from '@lingui/macro';
 
 const SERVICE_ITEMS = [
     {
         title:<Trans>Service</Trans>,
-        image:[service,exchange_rates],
+        image:[service],
         description:<Trans>fyjk;glifktfy</Trans>
     },
 ];
