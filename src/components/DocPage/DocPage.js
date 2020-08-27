@@ -19,6 +19,7 @@ import TOPUP from './sections/Top up/TopUp'
 import AIR_TIME_ITEMS from './sections/Top up/Airtime/Airtime'
 import TONTINE_ITEMS from "./sections/Tontines/Tontines"
 import ROB_TONTINE_ITEMS from "./sections/Tontines/robs tontine/RobTontine"
+import AFB_ACCOUNT_ITEMS from "./sections/fund transfer/AFB account/afb_account"
 
 
 class DocPage extends React.Component {
@@ -88,6 +89,14 @@ class DocPage extends React.Component {
             }
             case ("ViaQRCode") : {
                 return <PaginationComponent description = {FUND_TRANSFER_ITEMS[4].description} images = {FUND_TRANSFER_ITEMS[4].image} title = {FUND_TRANSFER_ITEMS[4].title}/>
+            }
+
+            //To AFBank
+            case ("ChooseFromBeneficiary") : {
+                return <PaginationComponent description = {AFB_ACCOUNT_ITEMS[0].description} images = {AFB_ACCOUNT_ITEMS[0].image} title = {AFB_ACCOUNT_ITEMS[0].title}/>
+            }
+            case ("EnterBeneficiaryAccount") : {
+                return <PaginationComponent description = {AFB_ACCOUNT_ITEMS[1].description} images = {AFB_ACCOUNT_ITEMS[1].image} title = {AFB_ACCOUNT_ITEMS[1].title}/>
             }
 
             //ServicePayment

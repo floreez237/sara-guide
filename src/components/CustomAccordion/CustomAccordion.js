@@ -39,8 +39,10 @@ class CustomAccordion extends React.Component {
         this.goToEditUserDetails = this.goToEditUserDetails.bind(this)
         this.goToChangePIN = this.goToChangePIN.bind(this)
         this.goToAddAddress = this.goToAddAddress.bind(this)
+        this.goToToChooseFromBeneficiary = this.goToToChooseFromBeneficiary.bind(this)
+        this.goToEnterBeneficiaryAccount = this.goToEnterBeneficiaryAccount.bind(this)
     }
-//goToTopUp
+//Account
     goToAccountManagement(){
         this.props.changeSection("AccountManagement")
     }
@@ -65,27 +67,40 @@ class CustomAccordion extends React.Component {
     goToAccounts(){
         this.props.changeSection("Accounts")
     }
+
+// Cash in
     goToCashIn(){
         this.props.changeSection("CashIn")
     }
     goToCashInFromBank(){
         this.props.changeSection("CashInFromBank")
     }
+//Cash out
     goToCashOut(){
         this.props.changeSection("CashOut")
     }
     goToCashOutToBank(){
         this.props.changeSection("CashOutToBank")
     }
+
+//Fund Transfer
     goToFundTransfer(){
         this.props.changeSection("FundTransfer")
     }
     goToToOtherWallet(){
         this.props.changeSection("ToOtherWallet")
     }
-    goToToAnAFBBank(){
-        this.props.changeSection("ToAnAFBBank")
-    }
+
+                //To an AFB Bank
+                    goToToAnAFBBank(){
+                        this.props.changeSection("ToAnAFBBank")
+                    }
+                    goToToChooseFromBeneficiary(){
+                        this.props.changeSection("ChooseFromBeneficiary")
+                    }
+                    goToEnterBeneficiaryAccount(){
+                        this.props.changeSection("EnterBeneficiaryAccount")
+                    }
     goToFlashTransfer(){
         this.props.changeSection("FlashTransfer")
     }
@@ -227,12 +242,12 @@ class CustomAccordion extends React.Component {
                                             b. <Trans>To an AFB bank account</Trans>
                                     </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="20">
-                                            <Card.Body>
+                                            <Card.Body onClick = {this.goToToChooseFromBeneficiary}>
                                                 i. <Trans>Choose from beneficiary list</Trans>
                                         </Card.Body>
                                         </Accordion.Collapse>
                                         < Accordion.Collapse eventKey="20">
-                                            <Card.Body>
+                                            <Card.Body onClick = {this.goToEnterBeneficiaryAccount}>
                                                 ii. <Trans>Enter beneficiary account number</Trans>
                                         </Card.Body>
                                         </Accordion.Collapse>
@@ -259,6 +274,7 @@ class CustomAccordion extends React.Component {
                         <Accordion.Collapse eventKey={"4"}>
                             <Card.Body>
                                 <Accordion>
+                                    
                                     <Card>
                                         <Accordion.Toggle as={Card.Header} eventKey="4">
                                             a. <Trans>Partner Types</Trans>
