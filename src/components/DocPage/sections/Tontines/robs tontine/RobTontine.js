@@ -6,7 +6,7 @@ import tontine_history from './tontine_history.jpg';
 import approval from './approvals.jpg';
 import payment_history from './payment_history.jpg';
 
-const ROB_TONTINE_ITEMS=[
+export const ROB_TONTINE_ITEMS=[
     {
         title: <Trans>New Tontine Payment</Trans>,
         image: [new_payment],
@@ -36,5 +36,3 @@ const ROB_TONTINE_ITEMS=[
 
 
 ];
-
-export default ROB_TONTINE_ITEMS
