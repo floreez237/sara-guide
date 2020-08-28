@@ -47,6 +47,9 @@ class CustomAccordion extends React.Component {
         this.goToPaymentProcedure = this.goToPaymentProcedure.bind(this)
         this.goToAirTime = this.goToAirTime.bind(this)
         this.goToExchangeRate = this.goToExchangeRate.bind(this)
+        this.goToData = this.goToData.bind(this)
+        this.goToMyDataNumber = this.goToMyDataNumber.bind(this)
+        this.goToOtherDataNumber = this.goToOtherDataNumber.bind(this)
     }
 //Account
     goToAccountManagement(){
@@ -133,7 +136,8 @@ class CustomAccordion extends React.Component {
         this.props.changeSection("ProductNService")
     }
     goToProduct(){
-        this.props.changeSection("Product")
+        // this.props.changeSection("Product")
+        this.displayIsComingSoon()
     }
     goToService(){
         this.props.changeSection("Service")
@@ -161,6 +165,15 @@ class CustomAccordion extends React.Component {
     goToTontine(){
         this.props.changeSection("Tontine")
     }
+    goToData(){
+        this.displayIsComingSoon()
+    }
+    goToMyDataNumber(){
+        this.displayIsComingSoon()
+    }
+    goToOtherDataNumber(){
+        this.displayIsComingSoon()
+    }
     goToRobsTontine(){
         this.props.changeSection("RobsTontine")
     }
@@ -178,6 +191,9 @@ class CustomAccordion extends React.Component {
     }
     goToPendingHistory(){
         this.props.changeSection("PendingHistory")
+    }
+    displayIsComingSoon(){
+        alert("Coming Soon")
     }
     // goToTopUp(){
     //     this.
@@ -345,12 +361,13 @@ class CustomAccordion extends React.Component {
                                         <Accordion.Toggle as={Card.Header} eventKey="21" onClick = {this.goToProduct}>
                                             a. <Trans>Product</Trans>
                                     </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="21">
+                                    {/* Put event key 21 in following for the children components to be visible */}
+                                        <Accordion.Collapse eventKey="20">
                                             <Card.Body>
                                                 i. <Trans>Subscribtion for bank card</Trans>
                                         </Card.Body>
                                         </Accordion.Collapse>
-                                        < Accordion.Collapse eventKey="21">
+                                        < Accordion.Collapse eventKey="20">
                                             <Card.Body>
                                                 ii. <Trans>Application for new account</Trans>
                                         </Card.Body>
@@ -398,15 +415,16 @@ class CustomAccordion extends React.Component {
                                 </Accordion>
                                 <Accordion defaultActiveKey="0">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="22">
+                                        <Accordion.Toggle as={Card.Header} eventKey="22" onClick = {this.goToData}>
                                             b. <Trans>Data</Trans>
                                     </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="22">
+                                    {/* Put event key 22 in following for the children components to be visible */}
+                                        <Accordion.Collapse eventKey="21" onClick = {this.goToMyDataNumber}>
                                             <Card.Body>
                                                 i. <Trans>My number</Trans>
                                         </Card.Body>
                                         </Accordion.Collapse>
-                                        < Accordion.Collapse eventKey="22">
+                                        < Accordion.Collapse eventKey="21" onClick = {this.goToOtherDataNumber}>
                                             <Card.Body>
                                                 ii. <Trans>Other number</Trans>
                                         </Card.Body>
