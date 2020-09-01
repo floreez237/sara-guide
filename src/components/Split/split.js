@@ -15,12 +15,18 @@ class Split extends Component {
         this.handleRightEntered = this.handleRightEntered.bind(this)
         this.handleRightLeaved = this.handleRightLeaved.bind(this)
         this.handleLeftClicked = this.handleLeftClicked.bind(this)
+        this.handleRightClicked = this.handleRightClicked.bind(this)
     }
 
 
     //methods for left image
     handleLeftClicked() {
-        this.props.history.push("Doc", {isAccessible:true})
+        this.props.history.push("Doc", {isAccessible:true, page:"saraMoney"})
+        this.props.onChangeRadioButtons([false, true, false])
+    }
+
+    handleRightClicked() {
+        this.props.history.push("Doc", {isAccessible:true, page:"saraBanking"})
         this.props.onChangeRadioButtons([false, true, false])
     }
 
@@ -90,7 +96,7 @@ class Split extends Component {
                     onClick={this.handleLeftClicked}
                 >
                     <div className = "textLeft">
-                        <text>SARA WALLET</text>
+                        <text>SARA MONEY</text>
                     </div>
                 </div>
                 <div className={this.getRightClassName()} style={{
@@ -100,6 +106,7 @@ class Split extends Component {
                 }}
                     onMouseEnter={this.handleRightEntered}
                     onMouseLeave={this.handleRightLeaved}
+                    onClick = {this.handleRightClicked}
                 >
                     <div className = "textRight">
                         <text>SARA BANKING</text>

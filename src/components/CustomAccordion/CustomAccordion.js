@@ -50,6 +50,7 @@ class CustomAccordion extends React.Component {
         this.goToData = this.goToData.bind(this)
         this.goToMyDataNumber = this.goToMyDataNumber.bind(this)
         this.goToOtherDataNumber = this.goToOtherDataNumber.bind(this)
+        this.goToChat = this.goToChat.bind(this)
     }
 //Account
     goToAccountManagement(){
@@ -191,6 +192,9 @@ class CustomAccordion extends React.Component {
     }
     goToPendingHistory(){
         this.props.changeSection("PendingHistory")
+    }
+    goToChat(){
+        this.displayIsComingSoon()
     }
     displayIsComingSoon(){
         alert("Coming Soon")
@@ -476,7 +480,7 @@ class CustomAccordion extends React.Component {
                         </Accordion.Collapse>
                     </Card>
                     <Card>
-                        <Accordion.Toggle as={Card.Header} eventKey="8">
+                        <Accordion.Toggle as={Card.Header} eventKey="8" onClick = {this.goToChat}>
                             9. Chat
                         </Accordion.Toggle>
                     </Card>

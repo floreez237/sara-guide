@@ -66,7 +66,7 @@ class Navigation extends React.Component {
                                              radioButtons={this.state.radioButtons}
                                              changeRadioButtons={this.changeRadioButtons}/>
 
-                                </I18nProvider>
+                                    </I18nProvider>
                                 </div>
                                 
                             )
