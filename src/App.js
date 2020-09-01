@@ -5,12 +5,13 @@ import PaginationInnerComponent from "./components/PaginationInnerComponent/Pagi
 import img1 from "./resources/images/enfants.jpg"
 import img2 from "./resources/images/enfants.jpg"
 import Navigation from "./components/Navigation/Navigation";
-
+import SaraBankingAccordion from "./components/SaraBankingAccordion/SaraBankingAccordion";
 
 export default class App extends React.Component {
     render() {
         return (
-             <Navigation/>
+            // <Navigation/>
+            <SaraBankingAccordion/>
             // <Pagination/>
         );
     }
