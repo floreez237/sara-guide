@@ -29,7 +29,6 @@
   user-select: none;
   position: relative;
   overflow: hidden;
-  margin: 3px 40% 0 5px;
   min-width: 240px;
   min-height: 45px;
   display: inline-block;
@@ -178,4 +177,70 @@ input:nth-of-type(5):checked ~ .nav .item:nth-of-type(4)::after {
 
 input:nth-of-type(5):checked ~ .nav .item:nth-of-type(5) {
   color: #d41010;
+}
+
+@media (min-width: 0px) {
+  .item {
+    font-size: 14px;
+  }
+
+  .dropdown {
+    font-size: 14px;
+  }
+
+  .nav .static-item {
+    margin: 3px 35% 0 5px;
+  }
+}
+@media (min-width: 480px) {
+  .item {
+    font-size: 16px;
+  }
+
+  #dropdown {
+    font-size: 16px;
+  }
+
+  .nav .static-item {
+    margin: 3px 35% 0 5px;
+  }
+}
+@media (min-width: 640px) {
+  .item {
+    font-size: 16px;
+  }
+
+  #dropdown {
+    font-size: 16px;
+  }
+
+  .nav .static-item {
+    margin: 3px 5% 0 5px;
+  }
+}
+@media (min-width: 960px) {
+  .item {
+    font-size: 16px;
+  }
+
+  #dropdown {
+    font-size: 16px;
+  }
+
+  .nav .static-item {
+    margin: 3px 30% 0 5px;
+  }
+}
+@media (min-width: 1100px) {
+  .item {
+    font-size: 17px;
+  }
+
+  #dropdown {
+    font-size: 17px;
+  }
+
+  .nav .static-item {
+    margin: 3px 35% 0 5px;
+  }
 }

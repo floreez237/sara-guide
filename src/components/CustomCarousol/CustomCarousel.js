@@ -54,71 +54,37 @@ class CustomCarousel extends React.Component {
                     // dotListClass="custom-dot-list-style"
                     // itemClass="carousel-item-padding-40-px"
 
-                    style={{ height: "70%", }}
+                    style={{ height: "70%",}}
                 >
-                    <div>
+                    <div className = "image1">
                         <center>
                             <Image
-                                style={{
-                                    width: "100%",
-                                    height: 680,
-                                    resizeMode: 'stretch',
-                                    backgroundImage: `url(${image1})`,
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundSize: "cover",
-                                    borderStyle: "none",
-                                }}
+                                className = "image-height"
+                            />
+                        </center>
+                    </div>
+
+                    <div className = "image2">
+                        <center>
+                            <Image
+                                className = "image-height"
+                            />
+                        </center>
+                    </div>
+
+                    <div className = "image3">
+                        <center>
+                            <Image
+                                className = "image-height"
                             // source={image1}
                             />
                         </center>
                     </div>
 
-                    <div>
+                    <div className = "image4">
                         <center>
                             <Image
-                                style={{
-                                    width: "100%",
-                                    height: 680,
-                                    resizeMode: 'stretch',
-                                    backgroundImage: `url(${image2})`,
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundSize: "cover",
-                                    borderStyle: "none",
-                                }}
-                            // source={image2}
-                            />
-                        </center>
-                    </div>
-
-                    <div>
-                        <center>
-                            <Image
-                                style={{
-                                    width: "100%",
-                                    height: 680,
-                                    resizeMode: 'stretch',
-                                    backgroundImage: `url(${image3})`,
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundSize: "cover",
-                                    borderStyle: "none",
-                                }}
-                            // source={image1}
-                            />
-                        </center>
-                    </div>
-
-                    <div>
-                        <center>
-                            <Image
-                                style={{
-                                    width: "100%",
-                                    height: 680,
-                                    resizeMode: 'stretch',
-                                    backgroundImage: `url(${image4})`,
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundSize: "cover",
-                                    borderStyle: "none",
-                                }}
+                                className = "image-height"
                             // source={image1}
                             />
                         </center>

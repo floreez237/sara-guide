@@ -1,3 +1,187 @@
-.imageCanvas {
-    height: "80%";
+
+@media (min-width: 0px) {
+  .image1 {
+    background: url('../../resources/images/image1-very-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image2 {
+    background: url('../../resources/images/image2-very-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image3 {
+    background: url('../../resources/images/image3-very-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image4 {
+    background: url('../../resources/images/image4-very-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image-height {
+    height: 330px;
+    width: 1536px;
+  }
 }
+
+@media (min-width: 320px) {
+  .image1 {
+    background: url('../../resources/images/image1-very-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image2 {
+    background: url('../../resources/images/image2-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image3 {
+    background: url('../../resources/images/image3-very-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image4 {
+    background: url('../../resources/images/image4-very-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image-height {
+    height: 330px;
+    width: 1536px;
+  }
+}
+
+@media (min-width: 480px) {
+  .image1 {
+    background: url('../../resources/images/image1-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image2 {
+    background: url('../../resources/images/image2-small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image3 {
+    background: url('../../resources/images/image3-very-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image4 {
+    background: url('../../resources/images/image4-small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image-height {
+    height: 383px;
+    width: 1536px;
+  }
+}
+
+@media (min-width: 640px) {
+  .image1 {
+    background: url('../../resources/images/image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image2 {
+    background: url('../../resources/images/image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image3 {
+    background: url('../../resources/images/image3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image4 {
+    background: url('../../resources/images/image4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image-height {
+    height: 438px;
+    width: 1536px;
+  }
+}
+
+@media (min-width:960px) {
+  .image1 {
+    background: url('../../resources/images/image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image2 {
+    background: url('../../resources/images/image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image3 {
+    background: url('../../resources/images/image3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image4 {
+    background: url('../../resources/images/image4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image-height {
+    height: 438px;
+    width: 1536;
+  }
+}
+
+@media (min-width:1100px) {
+  .image1 {
+    background: url('../../resources/images/image1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image2 {
+    background: url('../../resources/images/image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image3 {
+    background: url('../../resources/images/image3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image4 {
+    background: url('../../resources/images/image4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+  }
+  .image-height {
+    height: 685px;
+    width: 1536;
+  }
+}
+

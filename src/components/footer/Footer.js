@@ -22,7 +22,7 @@ class Footing extends Component {
                      backgroundColor: "#E4E4E4",
                       paddingBottom: "30px", 
                       paddingTop: "10px" }}>
-                    <div style={{ marginTop: "10px", marginBottom: "10px" }}>
+                    <div style={{ marginTop: "10px", marginBottom: "10px", textAlign:"center" }}>
                         <h1 className="header vh1"><Trans>About Us</Trans> </h1>
                     </div>
 

@@ -90,6 +90,7 @@ class Split extends Component {
                     backgroundImage: `url(${img1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
+                    // width:"100%",
                 }}
                     onMouseEnter={this.handleLeftEntered}
                     onMouseLeave={this.handleLeftLeaved}
@@ -103,6 +104,7 @@ class Split extends Component {
                     backgroundImage: `url(${img1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
+                    // width:"100%",
                 }}
                     onMouseEnter={this.handleRightEntered}
                     onMouseLeave={this.handleRightLeaved}

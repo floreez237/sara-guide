@@ -23,3 +23,15 @@
     padding-top: 20px;
     /* right: 0; */
 }
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #split-right { width:67%; }
+    #container-left { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #split-right { width:100%; }
+    #container-left { width:100%; margin:0; border:none; }
+}
