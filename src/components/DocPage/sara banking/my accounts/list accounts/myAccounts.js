@@ -1,7 +1,7 @@
 import React from 'react';
 import {Trans} from '@lingui/macro';
 import accountList from './My Accounts.jpg';
-import home from './../home.jpg';
+import home from '../../home.jpg';
 
 const MY_ACCOUNTS =[
     {
@@ -10,3 +10,5 @@ const MY_ACCOUNTS =[
         description:<Trans>dsdsd</Trans>
     }
 ]
+
+export default MY_ACCOUNTS;
