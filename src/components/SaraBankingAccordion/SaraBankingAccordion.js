@@ -7,7 +7,6 @@ import {Trans} from "@lingui/macro";
 
 export default class saraBankingAccordion extends React.Component{
     render() {
-        
         return (
             <div className='left-container'>
             <Accordion defaultActiveKey="-1" style = {{
@@ -57,12 +56,12 @@ export default class saraBankingAccordion extends React.Component{
                         <Card.Body>
                             <Accordion defaultKey="0">
                                 <Card>
-                                    <Accordion.Toggle as={Card.Header} eventKey="11" >
+                                    <Accordion.Toggle as={Card.Header} eventKey="11">
                                         A. <Trans>Manage Beneficiaries</Trans>
                                     </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="11">
                                         <Card.Body>
-                                            <Accordion.Toggle as={Card.Header} eventKey="11" >
+                                            <Accordion.Toggle as={Card.Header} eventKey="11">
                                                 i. <Trans>List of beneficiaries</Trans>
                                             </Accordion.Toggle>
                                             <Accordion.Toggle as={Card.Header} eventKey="11">

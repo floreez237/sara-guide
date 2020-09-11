@@ -10,3 +10,5 @@ const MY_ACCOUNTS =[
         description:<Trans>dsdsd</Trans>
     }
 ]
+
+export default MY_ACCOUNTS
