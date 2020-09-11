@@ -23,18 +23,33 @@ import AFB_ACCOUNT_ITEMS from "./sections/fund transfer/AFB account/afb_account"
 import SERVICE_PAYMENTS_ITEMS from "./sections/service payment/ServicePayment"
 import EXCHANGE_RATE from './sections/product and service/service/exchange_rates/exchange_rates'
 import SaraBankingAccordion from '../SaraBankingAccordion/SaraBankingAccordion'
+import MY_ACCOUNTS from './sara banking/my accounts/MyAccounts'
 
 
 class DocPage extends React.Component {
 
-    state = { section: "Accounts" }
+    state = { saraMoneySection: "Accounts",
+              saraBankingSection:"MyAccounts" }
 
     componentDidMount() {
         this.props.changeRadioButtons([false, true, false]);
     }
 
-    getCurrentComponent() {
-        switch (this.state.section) {
+    getCurrentSaraBankingComponent(){
+        switch (this.state.saraBankingSection){
+             //My Accounts
+            case("MyAccounts"): {
+                return <PaginationComponent description={MY_ACCOUNTS[0].description} images={MY_ACCOUNTS[0].image} title={MY_ACCOUNTS[0].title}/>
+            }
+            case("ListOfAccounts"): {
+                return <PaginationComponent description={MY_ACCOUNTS[1].description} images={MY_ACCOUNTS[1].image} title={MY_ACCOUNTS[1].title}/>
+            }
+        }
+        return null
+    }
+
+    getCurrentSaraMoneyComponent() {
+        switch (this.state.saraMoneySection) {
             //Accounts
             case ("Accounts"): {
                 return <PaginationComponent description={ACCOUNTS[0].description} images={ACCOUNTS[0].image} title={ACCOUNTS[0].title} />
@@ -209,19 +224,19 @@ class DocPage extends React.Component {
                         {this.props.location.state.page === "saraMoney" ?
                         <div>
                             <div className="container-left">
-                                <CustomAccordion changeSection={(newSection) => this.setState({ section: newSection })} />
+                                <CustomAccordion changeSection={(newSection) => this.setState({ saraMoneySection: newSection })} />
                             </div>
                             <div className="split-right">
-                                {this.getCurrentComponent()}
+                                {this.getCurrentSaraMoneyComponent()}
                             </div>
                         </div>
                         :
                         <div>
                             <div className="container-left">
-                            <SaraBankingAccordion changeSection = {(newSection) => this.setState({section : newSection})}/>
+                            <SaraBankingAccordion changeSection = {(newSection) => this.setState({saraBankingSection : newSection})}/>
                         </div>
                         <div className="split-right">
-                            {this.getCurrentComponent()}
+                            {this.getCurrentSaraBankingComponent()}
                         </div>
                         </div>
                         }

@@ -10,8 +10,8 @@ import SaraBankingAccordion from "./components/SaraBankingAccordion/SaraBankingA
 export default class App extends React.Component {
     render() {
         return (
-            // <Navigation/>
-            <SaraBankingAccordion/>
+            <Navigation/>
+            // <SaraBankingAccordion/>
             // <Pagination/>
         );
     }
