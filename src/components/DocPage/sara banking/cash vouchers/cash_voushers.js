@@ -4,9 +4,9 @@ import CashVouchers from "./Cash Vouchers.jpg"
 
 const CASH_VOUSHERS = [
     {
-        title = <Trans>fixed deposits</Trans>,
-        image = [CashVoushers],
-        description = <Trans>fixed deposits</Trans>,
+        title : <Trans>fixed deposits</Trans>,
+        image : [CashVouchers],
+        description : <Trans>fixed deposits</Trans>,
     },
 ]
 
