@@ -1,7 +1,7 @@
 import React from 'react';
 import {Trans} from '@lingui/macro';
 import accountList from './My Accounts.jpg';
-import home from './../home.jpg';
+import home from '../../home.jpg';
 
 const MY_ACCOUNTS =[
     {
@@ -11,4 +11,4 @@ const MY_ACCOUNTS =[
     }
 ]
 
-export default MY_ACCOUNTS
+export default MY_ACCOUNTS;
