@@ -10,7 +10,7 @@ import home from './../home.jpg';
 const FUND_TRANSFER = [
     {
         title: <Trans>Fund Transfer</Trans>,
-        description: <Trans id="fundTransfer.description">The Fund Transfer module allows you to manage your beneficiaries, to make an account-to-account transfer, to make a transfer from your account to another Afriland account, to make an interbank transfer and finally to manage your standing orders. </Trans>,
+        description: <Trans id="banking.fundTransfer.description">The Fund Transfer module allows you to manage your beneficiaries, to make an account-to-account transfer, to make a transfer from your account to another Afriland account, to make an interbank transfer and finally to manage your standing orders. </Trans>,
         image:[home, fundTransferImage]
     },
     {

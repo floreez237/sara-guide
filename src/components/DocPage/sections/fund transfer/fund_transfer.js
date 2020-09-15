@@ -10,7 +10,7 @@ const FUND_TRANSFER_ITEMS = [
     {
         title:<Trans>Fund Transfer</Trans>,
         image:[home,fund_transfer],
-        description:<Trans id="fund.transfer.description">The Fund Transfer module allows you to perform operations such as wallet to wallet transfer, transfer from your wallet to a bank account, send money via the flash transfer menu, make a transfer via QR Code.</Trans>
+        description:<Trans id="wallet.fund.transfer.description">The Fund Transfer module allows you to perform operations such as wallet to wallet transfer, transfer from your wallet to a bank account, send money via the flash transfer menu, make a transfer via QR Code.</Trans>
     },
     {
         title:<Trans> To Other Wallet</Trans>,
