@@ -4,10 +4,10 @@ import fixed_deposits from "./Fixed Deposits.jpg"
 
 const FIXED_DEPOSITE = [
     {
-        title : <Trans>fixed deposits</Trans>,
-        image : [fixed_deposits],
-        description : <Trans>fixed deposits</Trans>,
+        title: <Trans>Fixed Deposits</Trans>,
+        image: [fixed_deposits],
+        description: <Trans>Fixed Deposits</Trans>,
     },
 ]
 
-export default FIXED_DEPOSITE
+export default FIXED_DEPOSITE;

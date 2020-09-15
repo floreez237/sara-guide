@@ -369,7 +369,7 @@ export default class saraBankingAccordion extends React.Component {
                         </Accordion.Collapse>
                                 <Accordion.Collapse eventKey="1000" onClick = {this.goToChangeLanguage}>
                                     <Card.Body>
-                                    C. <Trans>ChangeLanguage </Trans>
+                                    C. <Trans>Change Language </Trans>
                                     </Card.Body>
                                 </Accordion.Collapse>
                                 <Accordion.Collapse eventKey="1000" onClick = {this.goToChangePIN}>
