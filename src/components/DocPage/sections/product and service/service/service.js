@@ -6,7 +6,7 @@ const SERVICE_ITEMS = [
     {
         title:<Trans>Service</Trans>,
         image:[service],
-        description:<Trans>fyjk;glifktfy</Trans>
+        description:<Trans id="service.exchangeRates"> The service menu has a feature that allows you to view the exchange rate.</Trans>
     },
 ];
 

@@ -5,12 +5,13 @@ import AccountToAccountImage from "./Account To Account.jpg"
 import FundTransferBetweenBanks from "./Fund Transfer between banks.jpg"
 import ListOfBeneficiaries from "./List Of Beneficiaries.jpg"
 import ListRecurringTransfer from "./List recurring transfers.jpg"
+import home from './../home.jpg';
 
 const FUND_TRANSFER = [
     {
         title: <Trans>Fund Transfer</Trans>,
-        description: <Trans>Fund Transfer</Trans>,
-        image:[fundTransferImage]
+        description: <Trans id="fundTransfer.description">The Fund Transfer module allows you to manage your beneficiaries, to make an account-to-account transfer, to make a transfer from your account to another Afriland account, to make an interbank transfer and finally to manage your standing orders. </Trans>,
+        image:[home, fundTransferImage]
     },
     {
         title: <Trans>Manage Beneficiaries</Trans>,

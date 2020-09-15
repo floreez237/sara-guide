@@ -7,7 +7,7 @@ const MORE_INFO = [
     {
         title: <Trans>Account Details</Trans>,
         image: [more_info],
-        description: <Trans></Trans>
+        description: <Trans id="more_info.description">Used to view transactions history</Trans>
     },
     {
         title: <Trans>Transaction History</Trans>,

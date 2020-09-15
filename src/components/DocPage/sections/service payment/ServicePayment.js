@@ -14,12 +14,12 @@ const SERVICE_PAYMENTS_ITEMS=[
     {
         title: <Trans>Service Payment</Trans>,
         image: [home, ServicePaymentHome],
-        description: <Trans></Trans>
+        description: <Trans id="servicePayment.description">The service payment module allows you to pay your invoices.</Trans>
     },
     {
         title: <Trans>Partners</Trans>,
-        image:[partners],
-        description:<Trans></Trans>
+        image:[ServicePaymentHome,partners],
+        description:<Trans id="partner.description">The service payment module allows you to pay your invoices. The interface on the left shows the list of partner types. The right interface presents the list of partners according to the type of partner selected.</Trans>
     },
     {
         title: <Trans>Payment Canal</Trans>,

@@ -7,7 +7,7 @@ const MY_ACCOUNTS =[
     {
         title:<Trans>Accounts List</Trans>,
         image:[home, accountList],
-        description:<Trans>dsdsd</Trans>
+        description:<Trans id="accountList.description">The account module allows you to view the list of your accounts</Trans>
     }
 ]
 

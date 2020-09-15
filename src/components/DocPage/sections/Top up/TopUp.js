@@ -7,7 +7,7 @@ const TOP_UP_ITEMS=[
     {
         title:<Trans>Top Up</Trans>,
         image:[home,topUpHome],
-        description:<Trans> </Trans>
+        description:<Trans id="topUp.description">The TopUp module allows you to purchase Airtime and Data.</Trans>
     }
 ]
 

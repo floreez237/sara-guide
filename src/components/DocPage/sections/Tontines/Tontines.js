@@ -12,8 +12,8 @@ const TONTINE_ITEMS=[
     },
     {
         title: <Trans>Robes Tontines</Trans>,
-        image: [RobTontine],
-        description: <Trans></Trans>,
+        image: [TontineHome, RobTontine],
+        description: <Trans id="robes.tontines.description">Tontine module allows you to manage your tontines. The image on the left shows the list of its tontines. The one on the right allows you to perform operations on a tontine.</Trans>,
     }
 ];
 

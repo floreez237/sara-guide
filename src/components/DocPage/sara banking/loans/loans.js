@@ -1,6 +1,6 @@
 import React from 'react';
 import {Trans} from '@lingui/macro';
-import loan from 'Loans.jpg';
+import loan from './Loans.jpg';
 import home from '../home.jpg';
 
 const LOANS =[
