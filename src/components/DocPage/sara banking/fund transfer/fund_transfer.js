@@ -39,4 +39,4 @@ const FUND_TRANSFER = [
     }
 ]
 
-export default FUND_TRANSFER
+export default FUND_TRANSFER;

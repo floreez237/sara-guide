@@ -178,7 +178,7 @@ export default class saraBankingAccordion extends React.Component {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="200">
                                             <Card.Body>
-                                                    i.<Trans>View al ATM </Trans>
+                                                    i.<Trans>View all ATM </Trans>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                                 <Accordion.Collapse eventKey="200">
@@ -193,7 +193,7 @@ export default class saraBankingAccordion extends React.Component {
                         </Accordion.Collapse>
                                 <Accordion.Collapse eventKey="1000">
                                     <Card.Body>
-                                    C. <Trans>ChangeLanguage </Trans>
+                                    C. <Trans>Change Language </Trans>
                                     </Card.Body>
                                 </Accordion.Collapse>
                                 <Accordion.Collapse eventKey="1000">

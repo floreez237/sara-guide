@@ -1,6 +1,6 @@
 import React from 'react';
 import abt_one from './About Afriland 1.jpg';
-import abt_two from './Change PIN.jpg';
+import abt_two from './About Afriland 2.jpg';
 
 import {Trans} from '@lingui/macro';
 

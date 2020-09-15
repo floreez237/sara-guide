@@ -1,12 +1,12 @@
 import React from 'react';
 import {Trans} from '@lingui/macro';
-import loan from 'Loans.jpg';
+import commerce from 'Commerce.jpg';
 import home from '../home.jpg';
 
 const LOANS =[
     {
-        title:<Trans>Loans</Trans>,
-        image:[home, loan],
+        title:<Trans>Commerce</Trans>,
+        image:[home, commerce],
         description:<Trans>dsdsd</Trans>
     }
 ]
