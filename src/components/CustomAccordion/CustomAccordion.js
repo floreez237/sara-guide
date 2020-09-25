@@ -149,9 +149,6 @@ class CustomAccordion extends React.Component {
     goToTopUp(){
         this.props.changeSection("TopUp")
     }
-    goToService(){
-        this.props.changeSection("Service")
-    }
 
     goToAirTime(){
         this.props.changeSection("AirTime")

@@ -40,7 +40,7 @@ export default class PaginationInnerComponent extends React.Component {
                         {this.props.images ? this.getImages() : null}
                     </div>
                 </div>
-                <div className="description">
+                <div className="description" style={{textAlign: "center"}}>
                     <text>{this.props.description}</text>
                 </div>
 
